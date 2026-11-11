@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 406" width="820" height="406" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="How Footnote answers a question">
+<title>How Footnote answers a question</title>
+<desc>The index is built from filing PDFs. Each page is cut into chunks that go to a vector store, and each page is also kept whole. A question is routed to its filing, searched with keywords and vectors, and reranked. The main statements are put first. The model checks whether the pages are enough and may ask for one more search. It then answers from eight whole pages and names the pages it used, or says that the answer was not found.</desc>
+<rect width="820" height="406" fill="#fcfcfb"/>
+<text x="24.0" y="40.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">How Footnote answers a question</text>
+<text x="24.0" y="60.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400">Solid arrows follow the data. Dashed arrows show what the index supplies when a question is asked.</text>
+<rect x="24" y="78" width="772" height="112" rx="8" fill="#f1f0eb"/>
+<rect x="36" y="112" width="86" height="46" rx="6" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="79.0" y="139.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Filing PDF</text>
+<rect x="156" y="112" width="86" height="46" rx="6" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="199.0" y="139.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Pages</text>
+<rect x="276" y="112" width="116" height="46" rx="6" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="334.0" y="132.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Chunks that never</text>
+<text x="334.0" y="146.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">cross a page</text>
+<path d="M426,117 v36 a55.0,7 0 0 0 110,0 v-36 a55.0,7 0 0 0 -110,0 z" fill="#ffffff" stroke="#c3c2b7"/>
+<path d="M426,117 a55.0,7 0 0 0 110,0" fill="none" stroke="#c3c2b7"/>
+<text x="481.0" y="143.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Vector store</text>
+<path d="M600,117 v36 a55.0,7 0 0 0 110,0 v-36 a55.0,7 0 0 0 -110,0 z" fill="#ffffff" stroke="#c3c2b7"/>
+<path d="M600,117 a55.0,7 0 0 0 110,0" fill="none" stroke="#c3c2b7"/>
+<text x="655.0" y="143.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Whole pages</text>
+<path d="M122,135.0 L151,135.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M156,135.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M242,135.0 L271,135.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M276,135.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M392,135.0 L421,135.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M426,135.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M199,112 L199,96 L655,96 L655,105" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M655,110 l-3.6,-6.5 h7.2 z" fill="#52514e"/>
+<text x="427.0" y="91.0" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">each page is also kept whole</text>
+<text x="36.0" y="180.0" font-size="10.5" fill="#898781" text-anchor="start" font-weight="700" letter-spacing="0.8">INDEX</text>
+<text x="88.0" y="180.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="400">built once, then only the changed chunks are embedded again</text>
+<rect x="24" y="214" width="772" height="152" rx="8" fill="#f1f0eb"/>
+<rect x="36" y="236" width="78" height="52" rx="26.0" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="75.0" y="266.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Question</text>
+<rect x="131" y="236" width="78" height="52" rx="6" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="170.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Route to</text>
+<text x="170.0" y="273.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">the filing</text>
+<rect x="226" y="236" width="102" height="52" rx="6" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="277.0" y="252.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Keyword and</text>
+<text x="277.0" y="266.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">vector search,</text>
+<text x="277.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">then rerank</text>
+<rect x="345" y="236" width="90" height="52" rx="6" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="390.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Statements</text>
+<text x="390.0" y="273.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">pinned first</text>
+<path d="M452,262.0 L492,230.0 L532,262.0 L492,294.0 z" fill="#e4eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="492.0" y="266.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Enough?</text>
+<rect x="563" y="236" width="96" height="52" rx="6" fill="#e4eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="611.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Answer from</text>
+<text x="611.0" y="273.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">8 whole pages</text>
+<rect x="676" y="236" width="108" height="52" rx="26.0" fill="#ffffff" stroke="#c3c2b7" stroke-width="1"/>
+<text x="730.0" y="252.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">Answer with</text>
+<text x="730.0" y="266.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">its pages, or</text>
+<text x="730.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">"not found"</text>
+<path d="M114,262.0 L126,262.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M131,262.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M209,262.0 L221,262.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M226,262.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M328,262.0 L340,262.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M345,262.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M435,262.0 L447,262.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M452,262.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M532,262.0 L558,262.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M563,262.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<path d="M659,262.0 L671,262.0" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M676,262.0 l-6.5,-3.6 v7.2 z" fill="#52514e"/>
+<text x="547.5" y="256.0" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">yes</text>
+<path d="M492,294.0 L492,320 L277,320 L277,293" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M277,288 l-3.6,6.5 h7.2 z" fill="#52514e"/>
+<text x="384.5" y="335.0" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">no, so it writes a better query and searches once more</text>
+<text x="36.0" y="354.0" font-size="10.5" fill="#898781" text-anchor="start" font-weight="700" letter-spacing="0.8">ONE QUESTION</text>
+<path d="M481,160 L481,202 L277,202 L277,231" fill="none" stroke="#2a78d6" stroke-width="1.3" stroke-dasharray="4 3.5" stroke-linejoin="round"/>
+<path d="M277,236 l-3.6,-6.5 h7.2 z" fill="#2a78d6"/>
+<path d="M655,160 L655,202 L611,202 L611,231" fill="none" stroke="#2a78d6" stroke-width="1.3" stroke-dasharray="4 3.5" stroke-linejoin="round"/>
+<path d="M611,236 l-3.6,-6.5 h7.2 z" fill="#2a78d6"/>
+<text x="379.0" y="198.0" font-size="10.5" fill="#52514e" text-anchor="middle" font-weight="400">chunks to search</text>
+<text x="664.0" y="206.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="400">pages to read</text>
+<rect x="24" y="382" width="22" height="13" rx="3" fill="#ffffff" stroke="#c3c2b7"/>
+<text x="53.0" y="392.5" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400">runs on the laptop, at no cost</text>
+<rect x="232" y="382" width="22" height="13" rx="3" fill="#e4eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="261.0" y="392.5" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400">calls the model</text>
+</svg>

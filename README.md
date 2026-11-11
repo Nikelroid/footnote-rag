@@ -26,29 +26,7 @@ So there are two questions. Can a small and cheap model answer questions about f
 
 ## 2. The solution
 
-```mermaid
-flowchart LR
-    subgraph ING [Index, built once and kept in step with the filings]
-        direction LR
-        PDF[Filing PDF] --> PAGES[Pages]
-        PAGES --> CHUNKS[Chunks that never cross a page]
-        CHUNKS --> VEC[(Vector store)]
-        PAGES --> STORE[(Whole pages)]
-    end
-    subgraph ASK [Answering one question]
-        direction LR
-        Q([Question]) --> ROUTE[Route to the filing]
-        ROUTE --> SEARCH[Keyword and vector search]
-        SEARCH --> RERANK[Rerank]
-        RERANK --> PIN[Main statements first]
-        PIN --> CHECK{Enough?}
-        CHECK -- "no, one retry" --> SEARCH
-        CHECK -- yes --> ANSWER[Answer from 8 pages]
-        ANSWER --> OUT([Answer with its pages, or not found])
-    end
-    VEC -.-> SEARCH
-    STORE -.-> ANSWER
-```
+![How Footnote answers a question](docs/architecture.svg)
 
 | Step | What happens | Why | Code |
 |---|---|---|---|
@@ -100,13 +78,17 @@ Routing and putting the statements first are two plain rules. Together they add 
 Take a real statement page. Move an amount from one line to another line under the same total, as a reclassification does in an amended filing. Every total still adds up, and the new amounts exist nowhere else, so the model cannot know them from its training. Then ask for the changed line. There are 45 such lines from 32 filings.
 
 ```mermaid
-flowchart TD
-    A[A filing is amended] --> B{What happens to the old page?}
-    B -- "it is replaced" --> C["New amount in 100% of answers"]
-    B -- "it stays next to the new page" --> D{What tells the two versions apart?}
-    D -- nothing --> E["The search order decides<br/>old amount in 87% or 0% of answers"]
+flowchart LR
+    A([A filing is amended]) --> B[The old page is replaced]
+    A --> D[The old page stays next to the new one]
+    B --> C["New amount in 100% of answers"]
+    D -- "nothing tells the versions apart" --> E["The search order decides<br/>old amount in 87% or 0% of answers"]
     D -- "filing dates on the pages" --> F["No better<br/>old amount in 100% or 39% of answers"]
     D -- "dates and one rule" --> G["New amount in 100% of answers"]
+    classDef good fill:#e3f6ee,stroke:#1baf7a,color:#0b0b0b
+    classDef bad fill:#fdebe3,stroke:#eb6834,color:#0b0b0b
+    class C,G good
+    class E,F bad
 ```
 
 ![Which amount comes back after an amendment](results/amended-moved-claude-haiku-5-5-moved.svg)
