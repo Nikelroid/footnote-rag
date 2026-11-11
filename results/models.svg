@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 328" width="820" height="328" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Correct answers, by the model that answers">
+<rect width="820" height="328" fill="#fcfcfb"/>
+<text x="24.0" y="40.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">Correct answers, by the model that answers</text>
+<text x="24.0" y="60.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400">150 FinanceBench questions. The search, the prompts and the judge are the same for every model.</text>
+<rect x="24" y="74" width="11" height="11" rx="2" fill="#2a78d6"/>
+<text x="41.0" y="84.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">Claude Haiku 5.5</text>
+<rect x="173.4" y="74" width="11" height="11" rx="2" fill="#eb6834"/>
+<text x="190.4" y="84.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">Claude Sonnet 5.5</text>
+<rect x="329.70000000000005" y="74" width="11" height="11" rx="2" fill="#1baf7a"/>
+<text x="346.7" y="84.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">Gemini 3.8 Flash</text>
+<line x1="234.0" y1="98" x2="234.0" y2="252" stroke="#c3c2b7" stroke-width="1"/>
+<text x="234.0" y="268.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">0%</text>
+<line x1="372.5" y1="98" x2="372.5" y2="252" stroke="#e1e0d9" stroke-width="1"/>
+<text x="372.5" y="268.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">25%</text>
+<line x1="511.0" y1="98" x2="511.0" y2="252" stroke="#e1e0d9" stroke-width="1"/>
+<text x="511.0" y="268.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">50%</text>
+<line x1="649.5" y1="98" x2="649.5" y2="252" stroke="#e1e0d9" stroke-width="1"/>
+<text x="649.5" y="268.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">75%</text>
+<line x1="788.0" y1="98" x2="788.0" y2="252" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788.0" y="268.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">100%</text>
+<text x="222.0" y="131.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">No documents</text>
+<path d="M234.0,109.0 h181.9 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-181.9 z" fill="#2a78d6"/>
+<text x="425.9" y="118.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">34%</text>
+<path d="M234.0,121.0 h316.3 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-316.3 z" fill="#eb6834"/>
+<text x="560.3" y="130.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">58%</text>
+<path d="M234.0,133.0 h339.4 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-339.4 z" fill="#1baf7a"/>
+<text x="583.4" y="142.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">62%</text>
+<text x="222.0" y="181.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Agent with search</text>
+<path d="M234.0,159.0 h471.2 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-471.2 z" fill="#2a78d6"/>
+<text x="715.2" y="168.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">86%</text>
+<path d="M234.0,171.0 h476.1 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-476.1 z" fill="#eb6834"/>
+<text x="720.1" y="180.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">87%</text>
+<path d="M234.0,183.0 h462.6 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-462.6 z" fill="#1baf7a"/>
+<text x="706.6" y="192.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">84%</text>
+<text x="222.0" y="231.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Evidence page handed over</text>
+<path d="M234.0,209.0 h498.3 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-498.3 z" fill="#2a78d6"/>
+<text x="742.3" y="218.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">91%</text>
+<path d="M234.0,221.0 h516.5 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-516.5 z" fill="#eb6834"/>
+<text x="760.5" y="230.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">94%</text>
+<path d="M234.0,233.0 h507.2 a4,4 0 0 1 4,4 v2 a4,4 0 0 1 -4,4 h-507.2 z" fill="#1baf7a"/>
+<text x="751.2" y="242.0" font-size="10.5" fill="#52514e" text-anchor="start" font-weight="600">92%</text>
+<text x="24.0" y="294.0" font-size="11.5" fill="#898781" text-anchor="start" font-weight="400">Longer is better.</text>
+</svg>

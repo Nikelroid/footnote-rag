@@ -1,0 +1,333 @@
+{
+ "runs": [
+  {
+   "run": "floor-9f21d470",
+   "system": "floor",
+   "model": "gemini-3.8-flash",
+   "grader": "judge-533f8883_claude-sonnet-5-5",
+   "n_cases": 150,
+   "n_cases_scored": 146,
+   "reps": 3,
+   "n_answers": 450,
+   "n_graded": 396,
+   "n_expected": 450,
+   "n_missing_answers": 0,
+   "n_ungraded": 0,
+   "n_not_gradable": 54,
+   "n_unexpected_rows": 0,
+   "correct": {
+    "mean": 0.6198630136986302,
+    "lo": 0.5445205479452054,
+    "hi": 0.6940639269406392,
+    "n_cases": 146
+   },
+   "incorrect": {
+    "mean": 0.36986301369863006,
+    "lo": 0.2968036529680365,
+    "hi": 0.44406392694063923,
+    "n_cases": 146
+   },
+   "refused": {
+    "mean": 0.010273972602739725,
+    "lo": 0.0,
+    "hi": 0.0273972602739726,
+    "n_cases": 146
+   },
+   "flip_rate": 0.12121212121212122,
+   "by_split": {
+    "dev": {
+     "mean": 0.6133333333333333,
+     "lo": 0.48666666666666664,
+     "hi": 0.7333333333333333,
+     "n_cases": 50
+    },
+    "test": {
+     "mean": 0.6232638888888888,
+     "lo": 0.529513888888889,
+     "hi": 0.7135416666666666,
+     "n_cases": 96
+    }
+   },
+   "by_type": {
+    "domain-relevant": {
+     "mean": 0.72,
+     "lo": 0.6,
+     "hi": 0.8266666666666667,
+     "n_cases": 50
+    },
+    "metrics-generated": {
+     "mean": 0.6170212765957447,
+     "lo": 0.48226950354609927,
+     "hi": 0.7517730496453899,
+     "n_cases": 47
+    },
+    "novel-generated": {
+     "mean": 0.5204081632653061,
+     "lo": 0.3877551020408163,
+     "hi": 0.6530612244897959,
+     "n_cases": 49
+    }
+   },
+   "answer_cost_per_question_usd": 0.007230396666666667,
+   "answer_cost_total_usd": 3.2536785000000004,
+   "judge_cost_per_answer_usd": 0.0030884141414141415,
+   "judge_cost_total_usd": 1.223012,
+   "latency_median_s": 11.8915,
+   "latency_p90_s": 28.6428,
+   "prompt_tokens_mean": 90.24,
+   "output_tokens_mean": 1910.0577777777778,
+   "retrieval": null,
+   "numeric_check": {
+    "n": 126,
+    "agree": 0.9682539682539683,
+    "disagreements": [
+     [
+      "financebench_id_04209",
+      1
+     ],
+     [
+      "financebench_id_04481",
+      0
+     ],
+     [
+      "financebench_id_04481",
+      1
+     ],
+     [
+      "financebench_id_04735",
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "run": "agent-b3bd03f3",
+   "system": "agent",
+   "model": "gemini-3.8-flash",
+   "grader": "judge-533f8883_claude-sonnet-5-5",
+   "n_cases": 150,
+   "n_cases_scored": 150,
+   "reps": 3,
+   "n_answers": 450,
+   "n_graded": 445,
+   "n_expected": 450,
+   "n_missing_answers": 0,
+   "n_ungraded": 0,
+   "n_not_gradable": 5,
+   "n_unexpected_rows": 0,
+   "correct": {
+    "mean": 0.8422222222222222,
+    "lo": 0.7844444444444445,
+    "hi": 0.8977777777777777,
+    "n_cases": 150
+   },
+   "incorrect": {
+    "mean": 0.09666666666666665,
+    "lo": 0.055555555555555546,
+    "hi": 0.14222222222222222,
+    "n_cases": 150
+   },
+   "refused": {
+    "mean": 0.06111111111111111,
+    "lo": 0.02666666666666667,
+    "hi": 0.1011111111111111,
+    "n_cases": 150
+   },
+   "flip_rate": 0.053691275167785234,
+   "by_split": {
+    "dev": {
+     "mean": 0.8169934640522876,
+     "lo": 0.7124183006535947,
+     "hi": 0.9084967320261438,
+     "n_cases": 51
+    },
+    "test": {
+     "mean": 0.8552188552188551,
+     "lo": 0.7878787878787878,
+     "hi": 0.9191919191919192,
+     "n_cases": 99
+    }
+   },
+   "by_type": {
+    "domain-relevant": {
+     "mean": 0.8266666666666665,
+     "lo": 0.7266666666666666,
+     "hi": 0.92,
+     "n_cases": 50
+    },
+    "metrics-generated": {
+     "mean": 0.9733333333333334,
+     "lo": 0.9266666666666665,
+     "hi": 1.0,
+     "n_cases": 50
+    },
+    "novel-generated": {
+     "mean": 0.7266666666666666,
+     "lo": 0.6066666666666667,
+     "hi": 0.84,
+     "n_cases": 50
+    }
+   },
+   "answer_cost_per_question_usd": 0.014492028833333335,
+   "answer_cost_total_usd": 6.5214129750000005,
+   "judge_cost_per_answer_usd": 0.003156984269662921,
+   "judge_cost_total_usd": 1.404858,
+   "latency_median_s": 9.462499999999999,
+   "latency_p90_s": 20.988300000000006,
+   "prompt_tokens_mean": 17775.54,
+   "output_tokens_mean": 1007.9222222222222,
+   "retrieval": {
+    "hit@1": 0.26,
+    "recall@1": 0.18888888888888888,
+    "doc_hit@1": 0.7933333333333333,
+    "hit@3": 0.54,
+    "recall@3": 0.5333333333333333,
+    "doc_hit@3": 0.8777777777777778,
+    "hit@5": 0.6755555555555556,
+    "recall@5": 0.6588888888888889,
+    "doc_hit@5": 0.9733333333333334,
+    "hit@10": 0.82,
+    "recall@10": 0.8151851851851852,
+    "doc_hit@10": 0.9866666666666667,
+    "hit@20": 0.82,
+    "recall@20": 0.8151851851851852,
+    "doc_hit@20": 0.9866666666666667,
+    "mrr": 0.4378835978835979
+   },
+   "numeric_check": {
+    "n": 156,
+    "agree": 0.9935897435897436,
+    "disagreements": [
+     [
+      "financebench_id_05718",
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "run": "ceiling-ae6c5299",
+   "system": "ceiling",
+   "model": "gemini-3.8-flash",
+   "grader": "judge-533f8883_claude-sonnet-5-5",
+   "n_cases": 150,
+   "n_cases_scored": 149,
+   "reps": 3,
+   "n_answers": 450,
+   "n_graded": 446,
+   "n_expected": 450,
+   "n_missing_answers": 0,
+   "n_ungraded": 0,
+   "n_not_gradable": 4,
+   "n_unexpected_rows": 0,
+   "correct": {
+    "mean": 0.9228187919463087,
+    "lo": 0.8803131991051454,
+    "hi": 0.960850111856823,
+    "n_cases": 149
+   },
+   "incorrect": {
+    "mean": 0.07718120805369127,
+    "lo": 0.039149888143176735,
+    "hi": 0.11968680089485458,
+    "n_cases": 149
+   },
+   "refused": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.02513361787000954,
+    "n_cases": 149
+   },
+   "flip_rate": 0.03355704697986577,
+   "by_split": {
+    "dev": {
+     "mean": 0.9346405228758169,
+     "lo": 0.8692810457516339,
+     "hi": 0.9869281045751633,
+     "n_cases": 51
+    },
+    "test": {
+     "mean": 0.9166666666666666,
+     "lo": 0.8605442176870748,
+     "hi": 0.9642857142857143,
+     "n_cases": 98
+    }
+   },
+   "by_type": {
+    "domain-relevant": {
+     "mean": 0.8733333333333333,
+     "lo": 0.78,
+     "hi": 0.9533333333333333,
+     "n_cases": 50
+    },
+    "metrics-generated": {
+     "mean": 0.98,
+     "lo": 0.94,
+     "hi": 1.0,
+     "n_cases": 50
+    },
+    "novel-generated": {
+     "mean": 0.9149659863945577,
+     "lo": 0.8367346938775511,
+     "hi": 0.9795918367346939,
+     "n_cases": 49
+    }
+   },
+   "answer_cost_per_question_usd": 0.00354761,
+   "answer_cost_total_usd": 1.5964245000000001,
+   "judge_cost_per_answer_usd": 0.0029184708520179374,
+   "judge_cost_total_usd": 1.301638,
+   "latency_median_s": 4.1845,
+   "latency_p90_s": 10.889300000000002,
+   "prompt_tokens_mean": 1344.1466666666668,
+   "output_tokens_mean": 677.2,
+   "retrieval": {
+    "hit@1": 1.0,
+    "recall@1": 0.8811111111111111,
+    "doc_hit@1": 1.0,
+    "hit@3": 1.0,
+    "recall@3": 1.0,
+    "doc_hit@3": 1.0,
+    "hit@5": 1.0,
+    "recall@5": 1.0,
+    "doc_hit@5": 1.0,
+    "hit@10": 1.0,
+    "recall@10": 1.0,
+    "doc_hit@10": 1.0,
+    "hit@20": 1.0,
+    "recall@20": 1.0,
+    "doc_hit@20": 1.0,
+    "mrr": 1.0
+   },
+   "numeric_check": {
+    "n": 156,
+    "agree": 1.0,
+    "disagreements": []
+   }
+  }
+ ],
+ "comparisons": [
+  {
+   "diff": 0.23173515981735163,
+   "lo": 0.15525114155251143,
+   "hi": 0.3070776255707763,
+   "p_value": 4.999750012499375e-05,
+   "n_cases": 146,
+   "b_better": 46,
+   "a_better": 7,
+   "a": "floor",
+   "b": "agent"
+  },
+  {
+   "diff": 0.0749440715883669,
+   "lo": 0.03355704697986577,
+   "hi": 0.11856823266219241,
+   "p_value": 0.0005499725013749313,
+   "n_cases": 149,
+   "b_better": 19,
+   "a_better": 3,
+   "a": "agent",
+   "b": "ceiling"
+  }
+ ]
+}

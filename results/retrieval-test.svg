@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 336" width="820" height="336" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="How often the evidence page is among the 8 pages the model reads">
+<rect width="820" height="336" fill="#fcfcfb"/>
+<text x="24.0" y="40.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">How often the evidence page is among the 8 pages the model reads</text>
+<text x="24.0" y="60.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400">99 FinanceBench questions (test). Each row adds one step to the row above it.</text>
+<line x1="274.0" y1="76" x2="274.0" y2="260" stroke="#c3c2b7" stroke-width="1"/>
+<text x="274.0" y="276.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">0%</text>
+<line x1="402.5" y1="76" x2="402.5" y2="260" stroke="#e1e0d9" stroke-width="1"/>
+<text x="402.5" y="276.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">25%</text>
+<line x1="531.0" y1="76" x2="531.0" y2="260" stroke="#e1e0d9" stroke-width="1"/>
+<text x="531.0" y="276.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">50%</text>
+<line x1="659.5" y1="76" x2="659.5" y2="260" stroke="#e1e0d9" stroke-width="1"/>
+<text x="659.5" y="276.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">75%</text>
+<line x1="788.0" y1="76" x2="788.0" y2="260" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788.0" y="276.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">100%</text>
+<text x="262.0" y="102.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Keyword search (BM25)</text>
+<path d="M274.0,88.0 h89.5 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-89.5 z" fill="#2a78d6"/>
+<text x="375.5" y="102.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="600">18.2%</text>
+<text x="262.0" y="138.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Vector search</text>
+<path d="M274.0,124.0 h286.7 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-286.7 z" fill="#2a78d6"/>
+<text x="572.7" y="138.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="600">56.6%</text>
+<text x="262.0" y="174.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Both, reranked</text>
+<path d="M274.0,160.0 h281.6 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-281.6 z" fill="#2a78d6"/>
+<text x="567.6" y="174.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="600">55.6%</text>
+<text x="262.0" y="210.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">and routed to the filing</text>
+<path d="M274.0,196.0 h317.9 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-317.9 z" fill="#2a78d6"/>
+<text x="603.9" y="210.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="600">62.6%</text>
+<text x="262.0" y="246.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">and main statements first</text>
+<path d="M274.0,232.0 h390.6 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-390.6 z" fill="#2a78d6"/>
+<text x="676.6" y="246.0" font-size="11.5" fill="#0b0b0b" text-anchor="start" font-weight="600">76.8%</text>
+<text x="24.0" y="302.0" font-size="11.5" fill="#898781" text-anchor="start" font-weight="400">Search only. No model is called for this measurement.</text>
+</svg>

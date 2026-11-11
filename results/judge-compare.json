@@ -1,0 +1,338 @@
+{
+ "reference": "judge-533f8883:claude-sonnet-5-5",
+ "candidate": "judge-533f8883:claude-haiku-5-5",
+ "runs": [
+  "agent-efe47188",
+  "ceiling-cbfbb02d",
+  "floor-ca00e7e6",
+  "rag-95abc0cf"
+ ],
+ "n": 611,
+ "agreement": 0.9459901800327333,
+ "lo": 0.9251209235100214,
+ "hi": 0.9612864457089404,
+ "kappa": 0.8796842180637771,
+ "labels": [
+  "correct",
+  "incorrect",
+  "refused"
+ ],
+ "table": [
+  [
+   411,
+   28,
+   0
+  ],
+  [
+   1,
+   139,
+   1
+  ],
+  [
+   0,
+   3,
+   28
+  ]
+ ],
+ "correct_by_reference": 0.7184942716857611,
+ "correct_by_candidate": 0.67430441898527,
+ "disagreements": [
+  {
+   "run": "floor-ca00e7e6",
+   "case_id": "financebench_id_00499",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The reference concludes 3M is not capital-intensive (capex/revenue 5.1%, fixed assets 20% of assets). The candidate gives similar metrics (5.4%, 20%) and concludes 'moderately capital-intensive, not highly'. This is a hedge but leans the same direction, so it largely agrees, though 'moderately' differs from a flat 'No'. Capex figure is slightly off (actual ~$1.75B, 5.1%), but within reasonable range and conclusion is consistent.",
+   "candidate_reason": "The reference concludes 3M is not capital-intensive, citing capex/revenue of 5.1%, fixed assets/total assets of 20%, and ROA of 12.4%. The candidate reaches a similar set of metrics (capex ~5.4% of revenue, PP&E ~20% of assets) but labels 3M 'moderately capital-intensive' rather than clearly 'not capital-intensive,' which conflicts with the reference's conclusion."
+  },
+  {
+   "run": "floor-ca00e7e6",
+   "case_id": "financebench_id_00499",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The reference concludes 3M is not capital-intensive, with capex/revenue about 5.1% and fixed assets about 20% of total assets. The candidate's figures are close (5.4%, 19%) and it concludes capex is well below truly capital-heavy sectors. But it labels 3M \"moderately capital-intensive\" rather than \"no\", which hedges, though the substance (not heavily capital-intensive) is consistent with the reference.",
+   "candidate_reason": "The reference concludes 3M is not capital-intensive, citing CAPEX/Revenue of 5.1%, fixed assets/total assets of 20%, and ROA of 12.4%. The candidate hedges with 'moderately capital-intensive' and says 'not heavily so', so its conclusion is not the same as 'No'. Its figures are close to the reference, but its final characterization conflicts with the reference answer."
+  },
+  {
+   "run": "floor-ca00e7e6",
+   "case_id": "financebench_id_00606",
+   "rep": 1,
+   "reference": "refused",
+   "candidate": "incorrect",
+   "reference_reason": "The reference answer says wages (store payroll and benefits) as a percent of net sales increased. The candidate declines to commit to an answer, saying it cannot be determined, so it refused.",
+   "candidate_reason": "The reference answer says wages (store payroll and benefits) as a percent of net sales increased in FY2023. The candidate instead says the ratio cannot be determined because wages are not separately disclosed, committing to no direction. This is not a refusal in the strict sense since it gives a final answer of 'cannot be determined', but it contradicts the reference's conclusion."
+  },
+  {
+   "run": "floor-ca00e7e6",
+   "case_id": "financebench_id_00678",
+   "rep": 0,
+   "reference": "incorrect",
+   "candidate": "refused",
+   "reference_reason": "The reference says yes, gross margin improved from 4.8% to 5.3%. The candidate does not commit to that conclusion; it says the direction is not determinable and calls gross margin a weak metric. It never states the improvement, so it is not correct. It also does not clearly refuse, since it argues gross margin is not useful, but that argument contradicts the reference's yes.",
+   "candidate_reason": "The reference states gross margin improved from 4.8% in FY2021 to 5.3% in FY2022 (gross profit $3,017M to $3,502M). The candidate declines to determine the direction, saying it is 'not determinable with confidence,' and gives no committed answer on whether margin improved. It does not state the reference values, so it is not correct; it also is not a clear refusal to answer the question since it argues gross margin is a weak metric."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00005",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "Both answers conclude yes, working capital is positive, but the candidate gives $2,278M (total current assets minus total current liabilities) while the reference gives $831M (operating items only). The question asks whether working capital is positive, and the candidate's yes agrees with the reference. However, the stated value differs materially from the reference's $831M, and the reference defines working capital narrowly. The candidate's figure is a valid alternative computation using the standard definition, so it could be accepted as a different but valid answer, though the numeric value conflicts with the reference.",
+   "candidate_reason": "The candidate says Corning is positive with working capital of $2,278 million, but the reference answer gives $831 million based on operating current assets and liabilities. The candidate's figure uses total current assets and liabilities, so the amount differs substantially, though the directional yes answer matches."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00005",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "Both answers conclude Corning has positive working capital (Yes), but the reference gives $831M using only operating items, while the candidate gives $2,278M using total current assets and liabilities. The candidate's figure differs materially from the reference, though the yes/no conclusion matches. The candidate's approach is a standard, valid definition, and the reference's yes conclusion is the core answer, so the candidate could be accepted as a different but valid answer. However, the stated value differs and the reference explicitly gives $831M, so grading leans on whether the final answer agrees: the conclusion agrees (positive).",
+   "candidate_reason": "The candidate answers yes but reports working capital of $2,278 million using total current assets and total current liabilities, while the reference answer computes $831 million using only operating current items. The candidate's figure differs by a large amount from the reference value, so it does not match, even though the positive conclusion agrees."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00005",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "Both answers conclude that Corning has positive working capital in FY2022, so the yes/no conclusion matches. The values differ: the reference uses only operating current items ($831M), while the candidate uses total current assets minus total current liabilities ($2,278M). The candidate's figure is a valid, reported working capital number, and the question only asks whether working capital is positive, so the different but valid approach is acceptable.",
+   "candidate_reason": "The candidate answers yes (positive) but reports working capital of $2,278 million, while the reference gives $831 million (based on operating current assets and liabilities only). The amounts differ substantially, so the stated value does not match the reference even though the direction (positive) agrees."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00517",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers Yes and, if segments are counted, lists BCA (38.8%) and BGS (26.4%) as above 20%, and notes BDS at about 34.8%. These match the reference's three categories. It hedges by calling the product/service split the primary basis, but its numbers do not contradict the reference.",
+   "candidate_reason": "The reference answer says Yes, with Commercial Airplanes (39%), Defence (35%), and Services (26%) each above 20%. The candidate answers Yes, but its committed final answer names only Sales of products as the qualifying category and says Sales of services (16.1%) is below 20%, with BCA and BGS only mentioned as conditional. That contradicts the reference's identification of Services as above 20%, so the candidate's conclusion does not match."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00757",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers Yes, matching the reference's conclusion that AMD reported customer concentration in FY22. It cites a receivables-based figure (18% of accounts receivable) rather than the 16% of net revenue in the reference, and says no revenue concentration was shown. The yes/no conclusion agrees and nothing contradicts the reference, so the answer is a valid one, though it misses the revenue figure.",
+   "candidate_reason": "The reference answer says one customer accounted for 16% of consolidated net revenue in FY22. The candidate answers yes but cites a receivables concentration (18% of accounts receivable) and explicitly states the pages do not show revenue-based concentration, so it does not match the reference's revenue figure."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00757",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers Yes, matching the reference's conclusion, but gives a different supporting figure (18% of accounts receivable) and says revenue concentration was not quantified, missing the 16% of net revenue. The question is yes/no and the candidate's answer is a valid disclosure of customer concentration, so it agrees with the reference conclusion with nothing contradicting it.",
+   "candidate_reason": "The reference answer states one customer accounted for 16% of consolidated net revenue. The candidate answers yes, but its supporting figure is an 18% share of accounts receivable, not revenue, and it explicitly says revenue concentration is not quantified. The final value does not match the reference."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_00757",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers Yes, which matches the reference's conclusion, but it cites a different data point (18% of accounts receivable) and states the filing pages give no FY22 revenue concentration figure. The reference's 16% of net revenue is not mentioned. Since the question asks only whether AMD reported customer concentration, and the candidate's receivables concentration is a valid form of reported concentration, the yes conclusion holds, though it misses the key revenue fact.",
+   "candidate_reason": "The reference answer states one customer accounted for 16% of FY22 consolidated net revenue. The candidate instead cites an 18% receivables concentration and explicitly claims the filing gives no FY22 revenue concentration figure, so it contradicts the reference's specific value even though its 'yes' conclusion matches."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_02416",
+   "rep": 1,
+   "reference": "refused",
+   "candidate": "incorrect",
+   "reference_reason": "The reference lists Trillium, Array, and Therachon. The candidate identified only Array and Therachon, did not name Trillium, and ended with 'NOT FOUND' without committing to a three-company answer, so it is a refusal.",
+   "candidate_reason": "The reference answer lists Trillium, Array, and Therachon as the three acquisitions. The candidate names only Array and Therachon, omits Trillium, and explicitly says it cannot give three, ending with NOT FOUND. It does not commit to a complete answer, so it is incorrect rather than refused, since it did provide partial answers."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_02416",
+   "rep": 2,
+   "reference": "refused",
+   "candidate": "incorrect",
+   "reference_reason": "The reference answer lists Trillium, Array, and Therachon. The candidate names only Array and Therachon, says it cannot identify a third company, and gives a final answer of NOT FOUND, so it does not commit to the full answer.",
+   "candidate_reason": "The reference answer names three acquisitions (Trillium, Array, Therachon), but the candidate names only Array and Therachon, omits Trillium, and ends with 'NOT FOUND' rather than committing to a three-company answer. This is not a refusal in the strict sense since it gives partial content, but it does not match the reference."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_05718",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate reports $0.389 billion ($389 million), which rounds to the reference $0.40 billion. The reference is evidently rounded to two decimals, so this is a small rounding difference and the answers agree.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate reports $0.389 billion ($389 million). The difference (0.389 vs 0.40) is about 3%, more than a very small rounding difference, so the candidate does not match the reference."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_05718",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate gives $0.389 billion ($389 million), which rounds to $0.39 billion. The reference is $0.40 billion, a difference of about 0.011 billion, or roughly 3%. The reference appears to be rounded to one decimal place, and 0.389 rounds to 0.4. The candidate's figure is the actual amount and agrees with the reference once rounded.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate reports $0.389 billion ($389 million). Rounded to two decimals, $0.389 billion is $0.39, which differs from $0.40 by more than a very small rounding difference."
+  },
+  {
+   "run": "rag-95abc0cf",
+   "case_id": "financebench_id_05718",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate's $0.389 billion ($389 million) rounds to the reference's $0.40 billion at the precision given, and it comes from the same Dividends paid line item in the cash flow statement.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate reports $0.389 billion ($389 million). These differ by about 0.011 billion, which is more than a very small rounding difference, so the candidate does not match the reference value."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00005",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "Both answers conclude that Corning has positive working capital, but the values differ. The reference uses only operating current assets and liabilities and gets $831 million. The candidate uses total current assets and liabilities and gets $2,278 million. The question asks only whether working capital is positive, and the candidate's conclusion (yes) matches the reference. The candidate's figure is a valid alternative based on the reported balance sheet, but the reference specifies $831 million.",
+   "candidate_reason": "The candidate concludes Corning has positive working capital, which matches the reference's yes, but its figure of $2,278 million differs substantially from the reference's $831 million, which is built from operating current assets and liabilities only. The candidate's number is total current assets minus total current liabilities, a different definition, so the value does not agree with the reference."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00005",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "Both answers conclude that Corning has positive working capital, but the candidate's figure of $2,278 million differs from the reference's $831 million. The reference uses only operating current items, while the candidate uses total current assets and liabilities. The candidate's number is a valid conventional measure, and the yes/no conclusion matches. The question asks 'does it have positive working capital', and the answer is yes either way.",
+   "candidate_reason": "The candidate answers yes, but reports positive working capital of $2,278 million, while the reference gives $831 million, computed from operating current assets and liabilities only. The candidate's figure differs by a large margin, so it does not match the reference value."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00005",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers yes, positive working capital, matching the reference's conclusion, but gives $2,278M (total current assets minus total current liabilities) versus the reference's $831M (operating items only). The question asks whether working capital is positive, and the conclusion agrees; the candidate's figure is a valid alternative calculation from reported totals.",
+   "candidate_reason": "The reference answer gives positive working capital of $831 million computed from operating current items only, while the candidate reports $2,278 million from total current assets minus total current liabilities. The candidate's conclusion (positive) matches, but its stated value differs substantially from the reference figure, so the final value does not agree."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00080",
+   "rep": 1,
+   "reference": "incorrect",
+   "candidate": "correct",
+   "reference_reason": "The reference says working capital is positive at about $1.6B, computed from the listed current assets and liabilities (excluding cash and short-term investments). The candidate also says it is positive, but its figures are $12.4B reported and $16.2B adjusted, neither matching $1.6B. The conclusion 'Yes' agrees, but the value differs materially from the reference.",
+   "candidate_reason": "The candidate answers yes, working capital is positive, which matches the reference conclusion. Its figures ($12.4B reported, $16.2B adjusted) use different methods from the reference's $1.6Bn, but the question asks whether the metric is positive and the candidate does not contradict that."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00517",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The reference answer is Yes, naming Commercial Airplanes (39%), Defense (35%) and Services (26%). The candidate also answers Yes, and mentions BCA at 39% and BGS at 26%, which match the reference. It does not assess BDS at 35%, and it uses the products/services split as its main basis. Its conclusion agrees with the reference and nothing it says contradicts it, so it is acceptable as a valid answer.",
+   "candidate_reason": "The candidate answers yes but names only Sales of products (83.9%) as qualifying and explicitly sets aside the segments. The reference says three categories exceed 20%: Commercial Airplanes (39%), Defence (35%), and Services (26%). The candidate's conclusion that only one category qualifies contradicts the reference."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00757",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers Yes, matching the reference's conclusion, but it cites only receivables concentration (18%) and says it cannot find revenue concentration. It misses the 16% of net revenue figure the reference gives. The yes/no conclusion agrees and nothing it says contradicts the reference, since it only says the revenue figure was not in the pages it saw. This is a valid, different supporting answer to the question as asked.",
+   "candidate_reason": "The reference says one customer accounted for 16% of FY22 consolidated net revenue. The candidate answers yes but cites receivables concentration (18% of accounts receivable) and explicitly states no 2022 revenue concentration was shown, so it does not match the reference figure."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00757",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate correctly answers Yes, but it supports the answer with accounts receivable concentration (18%) and never mentions the reference's key fact that one customer accounted for 16% of consolidated net revenue. The core conclusion matches, though the supporting figure differs and is a different metric; it also notes that a small number of customers account for a substantial part of revenue. Because the yes/no conclusion agrees and nothing contradicts the reference, this is a valid answer to the question.",
+   "candidate_reason": "The reference answer cites one customer at 16% of consolidated net revenue in FY22. The candidate answers yes, but its supporting figure is 18% of accounts receivable, not 16% of revenue, so the stated value does not match the reference."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_00757",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate answers Yes, which matches the reference's conclusion, but it cites accounts receivable concentration (18%) and never gives the 16% of net revenue figure. Since the question only asks whether customer concentration was reported, and the candidate gives a valid disclosure of it, the answer is acceptable as a different but valid answer, though it misses the revenue concentration.",
+   "candidate_reason": "The candidate answers yes, which matches the reference's yes, but it cites a different metric (18% of accounts receivable) rather than the reference's 16% of consolidated net revenue. The reference value is not stated, so the candidate's supporting figure contradicts the reference's specific number."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_05718",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate's $0.389 billion rounds to $0.39 billion, which is very close to the reference $0.40 billion. The reference is likely a rounded version of 389 million, so the two agree within a small rounding difference.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate computed $0.389 billion ($389 million). Rounding $0.389 billion to two decimals gives $0.39, not $0.40, and the difference is larger than a very small rounding difference."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_05718",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate reports $389 million, or $0.389 billion, which rounds to the reference value of $0.40 billion and matches the 10-K's dividends paid line.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate reports approximately $0.389 billion ($389 million). Rounded to two decimals, 0.389 is 0.39, not 0.40, and the difference exceeds a very small rounding difference, so the candidate does not match the reference value."
+  },
+  {
+   "run": "agent-efe47188",
+   "case_id": "financebench_id_05718",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate reports $389 million, or about $0.39 billion. The reference is $0.40 billion, which is $389 million rounded to one decimal place. The values agree within rounding.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate reports approximately $0.39 billion ($389 million). The difference of 0.01 billion exceeds a very small rounding difference relative to the reference value, so the candidate does not match."
+  },
+  {
+   "run": "ceiling-cbfbb02d",
+   "case_id": "financebench_id_00678",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate concludes yes, gross margin improved, from about 4.9% in 2021 to 5.3% in 2022. This matches the reference conclusion (4.8% to 5.3%). The gross profit figures differ slightly ($3,530M vs $3,502M; $3,049M vs $3,017M), but the conclusion and percentages are essentially the same.",
+   "candidate_reason": "The candidate concludes Boeing's gross margin improved in FY2022, which matches the reference's direction and the 5.3% FY2022 figure. However, its FY2021 gross profit ($3,049M, 4.9%) differs from the reference ($3,017M, 4.8%), and its FY2022 gross profit ($3,530M) differs from the reference ($3,502M). These are small discrepancies in the underlying figures, but the candidate's reported numbers do not match the reference values, and the 40 bp improvement is also off from the reference's 50 bp."
+  },
+  {
+   "run": "ceiling-cbfbb02d",
+   "case_id": "financebench_id_04980",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate reports capital spending of $4.625 billion, which rounds to the reference $4.60 billion (reference is rounded to 2 decimals); this is a very small rounding difference.",
+   "candidate_reason": "The reference answer is $4.60 billion. The candidate reports capital spending of $4,625 million, which converts to $4.625 billion. That differs from $4.60 billion by about 0.5%, more than a very small rounding difference when the reference is given to two decimals, so it does not match."
+  },
+  {
+   "run": "ceiling-cbfbb02d",
+   "case_id": "financebench_id_04980",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate gives $4.625 billion (about $4.6 billion), which matches the reference $4.60 billion within rounding.",
+   "candidate_reason": "The reference answer is $4.60 billion. The candidate reports $4.625 billion (about $4.6 billion) from the 'Capital spending' line in the FY2021 cash flow statement. Rounded to two decimals, $4.625 billion is $4.63, which differs from $4.60 by more than a very small rounding difference, so it does not match the reference."
+  },
+  {
+   "run": "ceiling-cbfbb02d",
+   "case_id": "financebench_id_05718",
+   "rep": 0,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate's $0.389 billion rounds to about $0.39 billion, versus the reference $0.40 billion. The reference is likely rounded from the actual $389 million, so the candidate is the same value with a small rounding difference.",
+   "candidate_reason": "The reference answer is $0.40 billion (about $400 million). The candidate reports $389 million, or $0.389 billion. Rounded to two decimals, 0.389 is 0.39, not 0.40, and the difference of about $11 million is more than a very small rounding difference."
+  },
+  {
+   "run": "ceiling-cbfbb02d",
+   "case_id": "financebench_id_05718",
+   "rep": 1,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate reports $0.389 billion, which rounds to $0.39 billion, whereas the reference is $0.40 billion. American Water's 2020 dividends paid were about $389 million, so the reference is probably rounded to one decimal place and the candidate's figure agrees with it within rounding. The difference of 0.011 billion is small relative to the rounded reference.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate reports $0.389 billion ($389 million). The difference is about 2.8%, which exceeds a very small rounding difference, so the candidate does not match the reference."
+  },
+  {
+   "run": "ceiling-cbfbb02d",
+   "case_id": "financebench_id_05718",
+   "rep": 2,
+   "reference": "correct",
+   "candidate": "incorrect",
+   "reference_reason": "The candidate's $0.389 billion rounds to $0.39 billion, which is close to the reference $0.40 billion, and it is the same 'Dividends paid' line item. The reference is likely rounded to one decimal, so the difference is a rounding difference and the answer is correct.",
+   "candidate_reason": "The reference answer is $0.40 billion, while the candidate states $0.389 billion. Rounded to two decimals, 0.389 is 0.39, not 0.40, so the difference exceeds a very small rounding difference."
+  }
+ ]
+}

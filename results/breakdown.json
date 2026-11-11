@@ -1,0 +1,28 @@
+{
+ "floor": "floor",
+ "system": "agent",
+ "by_memory": {
+  "never": {
+   "questions": 90,
+   "correct": 0.8222222222222222
+  },
+  "sometimes": {
+   "questions": 20,
+   "correct": 0.9
+  },
+  "always": {
+   "questions": 40,
+   "correct": 0.9166666666666666
+  }
+ },
+ "evidence_read": {
+  "answers": 380,
+  "correct": 338
+ },
+ "evidence_not_read": {
+  "answers": 70,
+  "correct": 48
+ },
+ "misses": 64,
+ "misses_with_evidence_read": 42
+}

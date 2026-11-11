@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "footnote"
+version = "0.1.0"
+description = "A question-answering assistant for SEC filings that cites its pages, tested on pages that change, come from the wrong filing, or carry instructions"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Nima Kelidari" }]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=2.0",
+    "numpy>=1.26",
+    "python-dotenv>=1.0",
+    "langchain-core>=1.0",
+    "langchain-classic>=1.0",
+    "langchain-chroma>=1.0",
+    "langchain-huggingface>=1.0",
+    "langchain-text-splitters>=1.0",
+    "langgraph>=1.0",
+    "sentence-transformers>=5.0",
+    "rank-bm25>=0.2",
+    "pymupdf>=1.24",
+    "greenlet>=3.0",
+]
+
+[project.optional-dependencies]
+app = ["fastapi>=0.110", "uvicorn>=0.30", "streamlit>=1.40", "mcp>=2.0", "google-adk>=2.0", "google-genai>=2.0", "litellm>=1.50"]
+dev = ["pytest>=8", "scipy>=1.11", "httpx>=0.27"]
+
+[project.urls]
+Repository = "https://github.com/Nikelroid/footnote-rag"
+
+[project.scripts]
+footnote = "footnote.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

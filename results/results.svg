@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 322" width="820" height="322" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="What the assistant answers, by how it gets its pages">
+<rect width="820" height="322" fill="#fcfcfb"/>
+<text x="24.0" y="40.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">What the assistant answers, by how it gets its pages</text>
+<text x="24.0" y="60.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400">150 FinanceBench questions, 3 runs each, answered by claude-haiku-5-5.</text>
+<rect x="24" y="74" width="11" height="11" rx="2" fill="#2a78d6"/>
+<text x="41.0" y="84.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">Correct</text>
+<rect x="111.30000000000001" y="74" width="11" height="11" rx="2" fill="#eb6834"/>
+<text x="128.3" y="84.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">Wrong</text>
+<rect x="184.8" y="74" width="11" height="11" rx="2" fill="#c3c2b7"/>
+<text x="201.8" y="84.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">Declines to answer</text>
+<line x1="224.0" y1="98" x2="224.0" y2="246" stroke="#c3c2b7" stroke-width="1"/>
+<text x="224.0" y="262.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">0%</text>
+<line x1="365.0" y1="98" x2="365.0" y2="246" stroke="#e1e0d9" stroke-width="1"/>
+<text x="365.0" y="262.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">25%</text>
+<line x1="506.0" y1="98" x2="506.0" y2="246" stroke="#e1e0d9" stroke-width="1"/>
+<text x="506.0" y="262.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">50%</text>
+<line x1="647.0" y1="98" x2="647.0" y2="246" stroke="#e1e0d9" stroke-width="1"/>
+<text x="647.0" y="262.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">75%</text>
+<line x1="788.0" y1="98" x2="788.0" y2="246" stroke="#e1e0d9" stroke-width="1"/>
+<text x="788.0" y="262.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">100%</text>
+<text x="212.0" y="124.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">No documents</text>
+<rect x="224.0" y="110.0" width="187.3" height="20" fill="#2a78d6"/>
+<text x="317.6" y="124.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">33.6%</text>
+<rect x="413.3" y="110.0" width="313.8" height="20" fill="#eb6834"/>
+<text x="570.2" y="124.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">56.0%</text>
+<path d="M729.1,110.0 h54.9 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-54.9 z" fill="#c3c2b7"/>
+<text x="758.5" y="124.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600">10.4%</text>
+<text x="212.0" y="160.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Search once, then answer</text>
+<rect x="224.0" y="146.0" width="451.7" height="20" fill="#2a78d6"/>
+<text x="449.9" y="160.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">80.4%</text>
+<rect x="677.7" y="146.0" width="65.7" height="20" fill="#eb6834"/>
+<text x="710.5" y="160.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">12.0%</text>
+<path d="M745.4,146.0 h38.6 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-38.6 z" fill="#c3c2b7"/>
+<text x="766.7" y="160.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600">7.6%</text>
+<text x="212.0" y="196.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Agent: check, search again</text>
+<rect x="224.0" y="182.0" width="481.8" height="20" fill="#2a78d6"/>
+<text x="464.9" y="196.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">85.8%</text>
+<rect x="707.8" y="182.0" width="56.9" height="20" fill="#eb6834"/>
+<text x="736.2" y="196.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">10.4%</text>
+<path d="M766.7,182.0 h17.3 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-17.3 z" fill="#c3c2b7"/>
+<text x="212.0" y="232.0" font-size="12.5" fill="#0b0b0b" text-anchor="end" font-weight="400">Evidence page handed over</text>
+<rect x="224.0" y="218.0" width="509.4" height="20" fill="#2a78d6"/>
+<text x="478.7" y="232.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">90.7%</text>
+<rect x="735.4" y="218.0" width="43.1" height="20" fill="#eb6834"/>
+<text x="756.9" y="232.0" font-size="11.5" fill="#ffffff" text-anchor="middle" font-weight="600">8.0%</text>
+<path d="M780.5,218.0 h3.5 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-3.5 z" fill="#c3c2b7"/>
+<text x="24.0" y="288.0" font-size="11.5" fill="#898781" text-anchor="start" font-weight="400">Graded by claude-sonnet-5-5. Each share is a mean over questions.</text>
+</svg>

@@ -1,0 +1,1961 @@
+{
+ "name": "FinanceBench",
+ "repo": "patronus-ai/financebench",
+ "commit": "cc39aeb4afdf33909ee1412188bf89035950c2eb",
+ "commit_date": "2024-12-03",
+ "license": "CC BY-NC 4.0 (per the Hugging Face dataset card PatronusAI/financebench)",
+ "paper": "arXiv 2311.11944",
+ "listed_on": "2026-11-10",
+ "files": [
+  {
+   "path": "README.md",
+   "size": 5094,
+   "git_blob_sha1": "bed5639eaeb17f93a818f55b99d03b398a469864"
+  },
+  {
+   "path": "data/financebench_document_information.jsonl",
+   "size": 88781,
+   "git_blob_sha1": "decdfa948630f289d05cc0048417b3b9107cfb9f"
+  },
+  {
+   "path": "data/financebench_open_source.jsonl",
+   "size": 929848,
+   "git_blob_sha1": "4aef1d43a443474ba193f158f2baf70550ff528d"
+  },
+  {
+   "path": "evaluation_playground.ipynb",
+   "size": 22715,
+   "git_blob_sha1": "8edb1991d19c2de20683f1626c34c4c7e43f23a7"
+  },
+  {
+   "path": "fig1.png",
+   "size": 144827,
+   "git_blob_sha1": "6911cbb691ea3f887f53a755ac8e708f9573dcbe"
+  },
+  {
+   "path": "pdfs/3M_2015_10K.pdf",
+   "size": 1160173,
+   "git_blob_sha1": "f06e48a5e4e3462bf322d51778f7672391817798"
+  },
+  {
+   "path": "pdfs/3M_2016_10K.pdf",
+   "size": 1449990,
+   "git_blob_sha1": "43d32cc8b446e14374d9e339d04a6ba055a983a5"
+  },
+  {
+   "path": "pdfs/3M_2017_10K.pdf",
+   "size": 1375146,
+   "git_blob_sha1": "470ca203a6c5fd6326eae22fbc99a7b6f2410e7a"
+  },
+  {
+   "path": "pdfs/3M_2018_10K.pdf",
+   "size": 1252586,
+   "git_blob_sha1": "abb98c81799b979c65b18c863a7a783d053945b6"
+  },
+  {
+   "path": "pdfs/3M_2019_10K.pdf",
+   "size": 1231580,
+   "git_blob_sha1": "0b409072b6a93c3f8b6cc1a68e3d7f0d099073f3"
+  },
+  {
+   "path": "pdfs/3M_2020_10K.pdf",
+   "size": 1114965,
+   "git_blob_sha1": "97f4a5ee9bae4bd4dd9db4693f08380a2469334c"
+  },
+  {
+   "path": "pdfs/3M_2021_10K.pdf",
+   "size": 1144721,
+   "git_blob_sha1": "e28d3f9b42e1f4e270136ec330aa196262f9cdfa"
+  },
+  {
+   "path": "pdfs/3M_2022_10K.pdf",
+   "size": 1655681,
+   "git_blob_sha1": "ac32e3076d5fc0378b5123b204eece5fc5d39dac"
+  },
+  {
+   "path": "pdfs/3M_2023Q2_10Q.pdf",
+   "size": 5287301,
+   "git_blob_sha1": "d902fe2dc015721ce474b354fb3c8d6fb7a6501b"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2015_10K.pdf",
+   "size": 864243,
+   "git_blob_sha1": "f6d47be9673e4a84be32cd2562050e59de68cd70"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2016_10K.pdf",
+   "size": 1328536,
+   "git_blob_sha1": "d1a8c1c7715c5c88c486681e8e1debd087f17f38"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2017_10K.pdf",
+   "size": 808406,
+   "git_blob_sha1": "78c7cd8ec84a1304480849a0c383db19e2d3467c"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2018_10K.pdf",
+   "size": 1438940,
+   "git_blob_sha1": "b3b5f9a27eeadc5971d74a333eddb92391bd15cb"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2019_10K.pdf",
+   "size": 1274941,
+   "git_blob_sha1": "4ea850e23e0921c8df3376f5a8093fbeaa169045"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2020_10K.pdf",
+   "size": 1153457,
+   "git_blob_sha1": "4e6194c0a84aed0e0d42ddcaabd98bf719d149b8"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2021_10K.pdf",
+   "size": 1912840,
+   "git_blob_sha1": "f159c67a1a33264c7c8a2f9e7cd38833bd2ce710"
+  },
+  {
+   "path": "pdfs/ACTIVISIONBLIZZARD_2022_10K.pdf",
+   "size": 2299060,
+   "git_blob_sha1": "cb09a13f29bd6516fa202a090d9cb27bb32c2d63"
+  },
+  {
+   "path": "pdfs/ACTIVSIONBLIZZARD_2023Q2_10Q.pdf",
+   "size": 919791,
+   "git_blob_sha1": "d42bf7d16bbf11c0d060fcfb5702d5bd33644887"
+  },
+  {
+   "path": "pdfs/ADOBE_2015_10K.pdf",
+   "size": 1457725,
+   "git_blob_sha1": "aa6c90ecf4b620f14e78a013a53a836a64c8cee7"
+  },
+  {
+   "path": "pdfs/ADOBE_2016_10K.pdf",
+   "size": 4171413,
+   "git_blob_sha1": "caf61c8dd39694a5e379c5ff74c108b2e83f2cc9"
+  },
+  {
+   "path": "pdfs/ADOBE_2017_10K.pdf",
+   "size": 4028448,
+   "git_blob_sha1": "e126b7b52116e1a5650e7ac25469d6f55e07d679"
+  },
+  {
+   "path": "pdfs/ADOBE_2018_10K.pdf",
+   "size": 4226085,
+   "git_blob_sha1": "32a3691f650cac88652f00ab7522c8d1efce9f2b"
+  },
+  {
+   "path": "pdfs/ADOBE_2019_10K.pdf",
+   "size": 866662,
+   "git_blob_sha1": "62efbdbba2cf4eea3ff34fb5d1a08e600ace6f34"
+  },
+  {
+   "path": "pdfs/ADOBE_2020_10K.pdf",
+   "size": 706905,
+   "git_blob_sha1": "55f1a42d0a7d85b4e3dee72c6c733fbba786f5f3"
+  },
+  {
+   "path": "pdfs/ADOBE_2021_10K.pdf",
+   "size": 633302,
+   "git_blob_sha1": "f6c3dd75209fef5ebd390f0dedddd328a34d1429"
+  },
+  {
+   "path": "pdfs/ADOBE_2022Q2_10Q.pdf",
+   "size": 416174,
+   "git_blob_sha1": "1493b38b7abdf858bd7ef0c7fe7776d5c941b8ba"
+  },
+  {
+   "path": "pdfs/ADOBE_2022_10K.pdf",
+   "size": 620288,
+   "git_blob_sha1": "76bc2937b5264bb3b92b1074912d069cc1cf9976"
+  },
+  {
+   "path": "pdfs/AES_2015_10K.pdf",
+   "size": 2037591,
+   "git_blob_sha1": "e95b9a34627b45b3a03448ffb1bc1ea3962be17a"
+  },
+  {
+   "path": "pdfs/AES_2016_10K.pdf",
+   "size": 2940480,
+   "git_blob_sha1": "23e4a44e3b2e794c83dcf18cf3842576b0a968b0"
+  },
+  {
+   "path": "pdfs/AES_2017_10K.pdf",
+   "size": 6671754,
+   "git_blob_sha1": "cb86ca92ee1365ac03266c9149295600e1268978"
+  },
+  {
+   "path": "pdfs/AES_2018_10K.pdf",
+   "size": 6342795,
+   "git_blob_sha1": "802fcf5a5563541fbfcb1ae0174c5a4133af4162"
+  },
+  {
+   "path": "pdfs/AES_2019_10K.pdf",
+   "size": 7900813,
+   "git_blob_sha1": "d5aae5c56bd5e5a8849137e0e382e4791e5864ad"
+  },
+  {
+   "path": "pdfs/AES_2020_10K.pdf",
+   "size": 3624890,
+   "git_blob_sha1": "fe85e96a5e3dee02aea95daf8e621c5599955186"
+  },
+  {
+   "path": "pdfs/AES_2021_10K.pdf",
+   "size": 2511838,
+   "git_blob_sha1": "098beec1ecfda720e02460408155334214be6597"
+  },
+  {
+   "path": "pdfs/AES_2022_10K.pdf",
+   "size": 4479324,
+   "git_blob_sha1": "65ea6bb7e1ed0474779b0160a6f5101a47aec9c3"
+  },
+  {
+   "path": "pdfs/AMAZON_2015_10K.pdf",
+   "size": 602072,
+   "git_blob_sha1": "58cb1102d585a0b4a5f4588e8bddf9800f9e3ab3"
+  },
+  {
+   "path": "pdfs/AMAZON_2016_10K.pdf",
+   "size": 594926,
+   "git_blob_sha1": "6032e9cc44b78ba9c66d8325cef4b66b31aad93c"
+  },
+  {
+   "path": "pdfs/AMAZON_2017_10K.pdf",
+   "size": 627047,
+   "git_blob_sha1": "590ff1725b8f51a3809157db039da074c912b6c8"
+  },
+  {
+   "path": "pdfs/AMAZON_2018_10K.pdf",
+   "size": 638004,
+   "git_blob_sha1": "dd14d0ad780461c4669abd286b4b729e4a465355"
+  },
+  {
+   "path": "pdfs/AMAZON_2019_10K.pdf",
+   "size": 619184,
+   "git_blob_sha1": "aeb8567b4522635d943e02f367e610cff9fd9246"
+  },
+  {
+   "path": "pdfs/AMAZON_2020_10K.pdf",
+   "size": 571542,
+   "git_blob_sha1": "9dfc9daca852d2b4a985ae15b2aab69c8a2c14f5"
+  },
+  {
+   "path": "pdfs/AMAZON_2021_10K.pdf",
+   "size": 999574,
+   "git_blob_sha1": "532d9281cd3f5fe0de5dd06c5421c741a48f46d3"
+  },
+  {
+   "path": "pdfs/AMAZON_2022_10K.pdf",
+   "size": 712683,
+   "git_blob_sha1": "a356f262500e568283a4d694148fecae28ff3707"
+  },
+  {
+   "path": "pdfs/AMCOR_2019_10K.pdf",
+   "size": 1394789,
+   "git_blob_sha1": "b1bda59d0e038b69953cee542ae4d523782182e8"
+  },
+  {
+   "path": "pdfs/AMCOR_2020_10K.pdf",
+   "size": 8364895,
+   "git_blob_sha1": "001df3e4572424f8ca4b8e89370ea3a535c8d67c"
+  },
+  {
+   "path": "pdfs/AMCOR_2021_10K.pdf",
+   "size": 1123058,
+   "git_blob_sha1": "9570f739649ee5395ffcb3b3d551f4584d1eb83d"
+  },
+  {
+   "path": "pdfs/AMCOR_2022_10K.pdf",
+   "size": 1055470,
+   "git_blob_sha1": "12e4c3c5552bfcd1d219f77afca9d866ebb4e453"
+  },
+  {
+   "path": "pdfs/AMCOR_2022_8K_2022-04-26.pdf",
+   "size": 1751261,
+   "git_blob_sha1": "c8a826fe848834fbe77f85d925bee974d8c92a0f"
+  },
+  {
+   "path": "pdfs/AMCOR_2022_8K_2022-07-01.pdf",
+   "size": 147921,
+   "git_blob_sha1": "778c0024d0e49abffa4b1adb0ea9f20c5bdf0248"
+  },
+  {
+   "path": "pdfs/AMCOR_2022_8K_dated-2022-04-26.pdf",
+   "size": 1751261,
+   "git_blob_sha1": "c8a826fe848834fbe77f85d925bee974d8c92a0f"
+  },
+  {
+   "path": "pdfs/AMCOR_2022_8K_dated-2022-07-01.pdf",
+   "size": 147921,
+   "git_blob_sha1": "778c0024d0e49abffa4b1adb0ea9f20c5bdf0248"
+  },
+  {
+   "path": "pdfs/AMCOR_2023Q2_10Q.pdf",
+   "size": 455017,
+   "git_blob_sha1": "8ed88c1adf345b7be08217dcd64b4cb809afde03"
+  },
+  {
+   "path": "pdfs/AMCOR_2023Q4_EARNINGS.pdf",
+   "size": 244702,
+   "git_blob_sha1": "3868d350122c8be7f7db63de5d7f875d826bf7b7"
+  },
+  {
+   "path": "pdfs/AMCOR_2023_10K.pdf",
+   "size": 1108309,
+   "git_blob_sha1": "3c8596d39a39cebdeef84e8fbfedc7231cbd8b7e"
+  },
+  {
+   "path": "pdfs/AMD_2015_10K.pdf",
+   "size": 2474122,
+   "git_blob_sha1": "dacb9e66dab18b6da798eee9aacde2ba9162b3b7"
+  },
+  {
+   "path": "pdfs/AMD_2016_10K.pdf",
+   "size": 2629303,
+   "git_blob_sha1": "ffdfc72ef753d914a3dde93f7954b6b2a74e1cdb"
+  },
+  {
+   "path": "pdfs/AMD_2017_10K.pdf",
+   "size": 3193280,
+   "git_blob_sha1": "d82959e48dea54f7940321b00051317555043a06"
+  },
+  {
+   "path": "pdfs/AMD_2018_10K.pdf",
+   "size": 2459354,
+   "git_blob_sha1": "a763280c69f66cd4fe56be1d0dd68326792efc87"
+  },
+  {
+   "path": "pdfs/AMD_2019_10K.pdf",
+   "size": 1720886,
+   "git_blob_sha1": "8951647cc8f83976c3a81630b968ddc1fa2f1d25"
+  },
+  {
+   "path": "pdfs/AMD_2020_10K.pdf",
+   "size": 1964354,
+   "git_blob_sha1": "74835aa014381224dfffa9a617cc7384689d861e"
+  },
+  {
+   "path": "pdfs/AMD_2021_10K.pdf",
+   "size": 1518628,
+   "git_blob_sha1": "de7902be4918e056b34573bd8625ed56c23e0835"
+  },
+  {
+   "path": "pdfs/AMD_2022_10K.pdf",
+   "size": 5122473,
+   "git_blob_sha1": "9cc40ffc8ed20286a2c8ae5cc860816f05b9ce6e"
+  },
+  {
+   "path": "pdfs/AMD_2022_annualreport.pdf",
+   "size": 998571,
+   "git_blob_sha1": "2898a7e2cfb316990481349a7c1b85676c2119a8"
+  },
+  {
+   "path": "pdfs/AMERICANEXPRESS_2022_10K.pdf",
+   "size": 2436166,
+   "git_blob_sha1": "da116dc7c7b79585ece010858ed1241b18d5353e"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2015_10K.pdf",
+   "size": 1441662,
+   "git_blob_sha1": "53f8faf88e12f3dbf566f65a317ca198e6b59d50"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2016_10K.pdf",
+   "size": 1070321,
+   "git_blob_sha1": "43c3371e90f059a88802a039b3fc1bf4629ac9cf"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2017_10K.pdf",
+   "size": 1259702,
+   "git_blob_sha1": "b87019222409b7ac98866c8fa569f91b0b8f348a"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2018_10K.pdf",
+   "size": 1531304,
+   "git_blob_sha1": "dfc35ed80e8ccfe562188ab7572cde6bb2cfe9fe"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2019_10K.pdf",
+   "size": 1816284,
+   "git_blob_sha1": "26a433e12fc6c42316c684d2248bdd9214019c6f"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2020_10K.pdf",
+   "size": 1437123,
+   "git_blob_sha1": "9bd247cf7e924645df16b1856e14888671fa1777"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2021_10K.pdf",
+   "size": 1975636,
+   "git_blob_sha1": "b716b0e0aece594ccb45d0006b183e49e24a1595"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2022_10K.pdf",
+   "size": 2729077,
+   "git_blob_sha1": "36c472d4671d6bf59a1284cb477de17e0dc4872c"
+  },
+  {
+   "path": "pdfs/AMERICANWATERWORKS_2023Q2_10Q.pdf",
+   "size": 647520,
+   "git_blob_sha1": "5cbf0ac851ccc418b67f2dce15f497def7b68389"
+  },
+  {
+   "path": "pdfs/APPLE_2015_10K.pdf",
+   "size": 705595,
+   "git_blob_sha1": "e7da3ed5793bbd6dc0271cc48d9188b792a895a0"
+  },
+  {
+   "path": "pdfs/APPLE_2016_10K.pdf",
+   "size": 864831,
+   "git_blob_sha1": "f45117c7edbc70d2dbf79e00f7d9d2f118351b28"
+  },
+  {
+   "path": "pdfs/APPLE_2017_10K.pdf",
+   "size": 942816,
+   "git_blob_sha1": "276585dcc98aa4b7f04c41f02a3c797c77af5bca"
+  },
+  {
+   "path": "pdfs/APPLE_2018_10K.pdf",
+   "size": 812663,
+   "git_blob_sha1": "d4328caca50149fe6936f6ea5019a9bf2374d82f"
+  },
+  {
+   "path": "pdfs/APPLE_2019_10K.pdf",
+   "size": 796040,
+   "git_blob_sha1": "ea861959891e4bad889b15b1fb1b0dd1c9459220"
+  },
+  {
+   "path": "pdfs/APPLE_2020_10K.pdf",
+   "size": 799616,
+   "git_blob_sha1": "56e1f1ae70f7fe526d7d368726726448c12247cc"
+  },
+  {
+   "path": "pdfs/APPLE_2021_10K.pdf",
+   "size": 646454,
+   "git_blob_sha1": "c64a277a3fbca500cc116586f5fb0aa585c7917f"
+  },
+  {
+   "path": "pdfs/APPLE_2022_10K.pdf",
+   "size": 729516,
+   "git_blob_sha1": "e0022df5c90c68d487d386a8656464f0d994af44"
+  },
+  {
+   "path": "pdfs/APPLE_2023Q3_10Q.pdf",
+   "size": 268231,
+   "git_blob_sha1": "4fdfdcbc7b318ce71a4c5a639221fe07bd6cd523"
+  },
+  {
+   "path": "pdfs/BESTBUY_2015_10K.pdf",
+   "size": 1562075,
+   "git_blob_sha1": "1967dcf607f6ac00781ddd50735abc3a1ceaa32d"
+  },
+  {
+   "path": "pdfs/BESTBUY_2016_10K.pdf",
+   "size": 810883,
+   "git_blob_sha1": "373548d41530875b9a72b49499360376e5e5da95"
+  },
+  {
+   "path": "pdfs/BESTBUY_2017_10K.pdf",
+   "size": 776434,
+   "git_blob_sha1": "1f876ed043f4e1c8dc146bc8aff1a66f5c5120a5"
+  },
+  {
+   "path": "pdfs/BESTBUY_2018_10K.pdf",
+   "size": 819070,
+   "git_blob_sha1": "d15a37939fc2516a2b962c7711be86294117cfce"
+  },
+  {
+   "path": "pdfs/BESTBUY_2019_10K.pdf",
+   "size": 782117,
+   "git_blob_sha1": "8c6aa64ecbca0b67df20e9dcf12442646e05de99"
+  },
+  {
+   "path": "pdfs/BESTBUY_2020_10K.pdf",
+   "size": 1505983,
+   "git_blob_sha1": "e0a70f84559e104aaa9a381a7efb5b32cd9ad3fb"
+  },
+  {
+   "path": "pdfs/BESTBUY_2021_10K.pdf",
+   "size": 968248,
+   "git_blob_sha1": "dcbdd1b3c32517549aa38f0c2e0bfaa53205fbd1"
+  },
+  {
+   "path": "pdfs/BESTBUY_2022_10K.pdf",
+   "size": 967635,
+   "git_blob_sha1": "5b1b2413c7b8d9ae35d4f61e04e5d169964989ee"
+  },
+  {
+   "path": "pdfs/BESTBUY_2023Q4_EARNINGS.pdf",
+   "size": 650946,
+   "git_blob_sha1": "2e3a3ecba6f70ff1cbdb46569ea67726f92aa15a"
+  },
+  {
+   "path": "pdfs/BESTBUY_2023_10K.pdf",
+   "size": 703034,
+   "git_blob_sha1": "bf024d862a895af1fb75bdb632fa31aa04d746ad"
+  },
+  {
+   "path": "pdfs/BESTBUY_2023_8K_dated-2023-04-12.pdf",
+   "size": 1180832,
+   "git_blob_sha1": "0c4b602f377867ddbf9283b836ff27e57feaee0a"
+  },
+  {
+   "path": "pdfs/BESTBUY_2023_8K_dated-2023-04-24.pdf",
+   "size": 212968,
+   "git_blob_sha1": "dfe774cfe4ca1c255976477c5e1419db892f49a8"
+  },
+  {
+   "path": "pdfs/BESTBUY_2024Q2_10Q.pdf",
+   "size": 442386,
+   "git_blob_sha1": "7abf896d4a58dfd3ced2d3a03fe877351a94c3cf"
+  },
+  {
+   "path": "pdfs/BESTBUY_2024Q2_EARNINGS.pdf",
+   "size": 623598,
+   "git_blob_sha1": "e12bf71f3d2277497073e70c27ed6304f38468e6"
+  },
+  {
+   "path": "pdfs/BLOCK_2015_10K.pdf",
+   "size": 970619,
+   "git_blob_sha1": "07211fbdde3a1470b8aa2b3f3270d44b69d06a6b"
+  },
+  {
+   "path": "pdfs/BLOCK_2016_10K.pdf",
+   "size": 864350,
+   "git_blob_sha1": "835a85395c69dd0462ed66c536d90d2e2310f707"
+  },
+  {
+   "path": "pdfs/BLOCK_2017_10K.pdf",
+   "size": 1016446,
+   "git_blob_sha1": "6bf9fdb92ebfd8c72a7f3f047fb0c241fcbeb4af"
+  },
+  {
+   "path": "pdfs/BLOCK_2018_10K.pdf",
+   "size": 1059480,
+   "git_blob_sha1": "44e99921aebb1cab42ee44823562569f8af14b4d"
+  },
+  {
+   "path": "pdfs/BLOCK_2019_10K.pdf",
+   "size": 1020639,
+   "git_blob_sha1": "6ff7d71e4ad298b87cd53de9174ab5d081a9b0c6"
+  },
+  {
+   "path": "pdfs/BLOCK_2020_10K.pdf",
+   "size": 1159158,
+   "git_blob_sha1": "e5e8c07502b2be3b886ae79d7e67ccd6612ead1b"
+  },
+  {
+   "path": "pdfs/BLOCK_2021_10K.pdf",
+   "size": 2162695,
+   "git_blob_sha1": "4de06b38b4a4e22021539197bb6b776d9b8aa51b"
+  },
+  {
+   "path": "pdfs/BLOCK_2022_10K.pdf",
+   "size": 6445303,
+   "git_blob_sha1": "3e3e68960ece81f5fb105a1d671ab7ae2d9c08a6"
+  },
+  {
+   "path": "pdfs/BLOCK_2022_8K_dated-2022-01-28.pdf",
+   "size": 579908,
+   "git_blob_sha1": "cb4e9d93fa4032d56257f08ca3ebbcfe600e682c"
+  },
+  {
+   "path": "pdfs/BOEING_2015_10K.pdf",
+   "size": 1124734,
+   "git_blob_sha1": "2d8569fff43b6105fa44bd88e45992f3f9094023"
+  },
+  {
+   "path": "pdfs/BOEING_2016_10K.pdf",
+   "size": 1160528,
+   "git_blob_sha1": "ca93005b14e965cc9ee82b9c6e7e4cea27cf330f"
+  },
+  {
+   "path": "pdfs/BOEING_2017_10K.pdf",
+   "size": 884454,
+   "git_blob_sha1": "35d3b3bf03e485007082e633550600f0051805bc"
+  },
+  {
+   "path": "pdfs/BOEING_2018_10K.pdf",
+   "size": 967741,
+   "git_blob_sha1": "1496f6ad88950b37f0733fcdad091097f9a4bd32"
+  },
+  {
+   "path": "pdfs/BOEING_2019_10K.pdf",
+   "size": 995981,
+   "git_blob_sha1": "b739a8667992aa94f7af3432186e291cf846b284"
+  },
+  {
+   "path": "pdfs/BOEING_2020_10K.pdf",
+   "size": 966465,
+   "git_blob_sha1": "cdef9e7f0b4cb231979afef8a175163163ed1edd"
+  },
+  {
+   "path": "pdfs/BOEING_2021_10K.pdf",
+   "size": 1250296,
+   "git_blob_sha1": "26bc6034ff1edab913d008a137f17bae186ed070"
+  },
+  {
+   "path": "pdfs/BOEING_2022_10K.pdf",
+   "size": 1366995,
+   "git_blob_sha1": "17884be94225d64ef32cf97edcf2ee5164251d00"
+  },
+  {
+   "path": "pdfs/BOSTONPROPERTIES_2015_10K.pdf",
+   "size": 1503717,
+   "git_blob_sha1": "b2009ec52900c0c04f2a37cb4d2b47baf1b7b91b"
+  },
+  {
+   "path": "pdfs/COCACOLA_2015_10K.pdf",
+   "size": 1744160,
+   "git_blob_sha1": "51d263972400dc67eb703319c80346d21c47f0d4"
+  },
+  {
+   "path": "pdfs/COCACOLA_2016_10K.pdf",
+   "size": 1735945,
+   "git_blob_sha1": "a70ece9f958087345c38452e926853b359c21cf6"
+  },
+  {
+   "path": "pdfs/COCACOLA_2017_10K.pdf",
+   "size": 1790599,
+   "git_blob_sha1": "340399e1fd68b05f4efbdba60985302d23c6689e"
+  },
+  {
+   "path": "pdfs/COCACOLA_2018_10K.pdf",
+   "size": 1823444,
+   "git_blob_sha1": "39c3de0100b43e171d8cc35680918508c0e27df2"
+  },
+  {
+   "path": "pdfs/COCACOLA_2019_10K.pdf",
+   "size": 1677379,
+   "git_blob_sha1": "e5fbb47d4238d83e88794674bf97f86a92ec653f"
+  },
+  {
+   "path": "pdfs/COCACOLA_2020_10K.pdf",
+   "size": 1523345,
+   "git_blob_sha1": "c2a9e224ba6dd846a9d1e67426b35d87a23ee21d"
+  },
+  {
+   "path": "pdfs/COCACOLA_2021_10K.pdf",
+   "size": 9762541,
+   "git_blob_sha1": "ed330eb7fa976673895294e6d5162691b1fce08b"
+  },
+  {
+   "path": "pdfs/COCACOLA_2022_10K.pdf",
+   "size": 9485744,
+   "git_blob_sha1": "eceb731f67dd9ca43bdab6b2eb40e6fff957022e"
+  },
+  {
+   "path": "pdfs/CORNING_2015_10K.pdf",
+   "size": 1389655,
+   "git_blob_sha1": "ae2997d1012b8fabbf48b2bde745e3c6fd9691c8"
+  },
+  {
+   "path": "pdfs/CORNING_2016_10K.pdf",
+   "size": 1068337,
+   "git_blob_sha1": "c69d6888b36ce2cd56aa4e59365f1fbf67b76c24"
+  },
+  {
+   "path": "pdfs/CORNING_2017_10K.pdf",
+   "size": 1163943,
+   "git_blob_sha1": "4148f45e2b16dc5f81859a94eda430f084dade54"
+  },
+  {
+   "path": "pdfs/CORNING_2018_10K.pdf",
+   "size": 1059369,
+   "git_blob_sha1": "d234ba4b7e5b44551bf88d346fb204ce1421c3d2"
+  },
+  {
+   "path": "pdfs/CORNING_2019_10K.pdf",
+   "size": 1244649,
+   "git_blob_sha1": "d564db16222f2e4e1925345051f77aca2fab9ee1"
+  },
+  {
+   "path": "pdfs/CORNING_2020_10K.pdf",
+   "size": 1180865,
+   "git_blob_sha1": "5f0f7ff9d8d990ff72bf183fdb64c2d898b9d6e4"
+  },
+  {
+   "path": "pdfs/CORNING_2021_10K.pdf",
+   "size": 1131912,
+   "git_blob_sha1": "f8db7c6e99706f8cb81ab5c6eb18a156daaeff29"
+  },
+  {
+   "path": "pdfs/CORNING_2022_10K.pdf",
+   "size": 1399926,
+   "git_blob_sha1": "feb04ff6269eff891b771c5ee082654bf78fe504"
+  },
+  {
+   "path": "pdfs/CORNING_2023Q2_10Q.pdf",
+   "size": 464735,
+   "git_blob_sha1": "6b433141f1d4ca57b9cc934041f2df7d0db411d1"
+  },
+  {
+   "path": "pdfs/COSTCO_2015_10K.pdf",
+   "size": 621316,
+   "git_blob_sha1": "95bc2dee5f9d7fe08cdc9083f957d9fdd2f19c7a"
+  },
+  {
+   "path": "pdfs/COSTCO_2016_10K.pdf",
+   "size": 587301,
+   "git_blob_sha1": "3297845ff93694b63ebc9f9b4c2eaa5449e12e7e"
+  },
+  {
+   "path": "pdfs/COSTCO_2017_10K.pdf",
+   "size": 632558,
+   "git_blob_sha1": "4d8e704ea7d8265bd062b94a8baa874a616bc021"
+  },
+  {
+   "path": "pdfs/COSTCO_2018_10K.pdf",
+   "size": 647305,
+   "git_blob_sha1": "d4b02c427ef894b3a9f5e97a7d497f239668e694"
+  },
+  {
+   "path": "pdfs/COSTCO_2019_10K.pdf",
+   "size": 711370,
+   "git_blob_sha1": "ae868ecfb901f640bf51ff2b6d0c8a379c838c86"
+  },
+  {
+   "path": "pdfs/COSTCO_2020_10K.pdf",
+   "size": 643504,
+   "git_blob_sha1": "8f053ae076dbf27fe37ca7e5a44adc4b2f28465a"
+  },
+  {
+   "path": "pdfs/COSTCO_2021_10K.pdf",
+   "size": 765319,
+   "git_blob_sha1": "8969f7a2601c92a9a1a65fcd137b94a868074e29"
+  },
+  {
+   "path": "pdfs/COSTCO_2022_10K.pdf",
+   "size": 799480,
+   "git_blob_sha1": "35b1d89d1679bd440fde15b68617f836283513d0"
+  },
+  {
+   "path": "pdfs/COSTCO_2023Q1_EARNINGS.pdf",
+   "size": 129582,
+   "git_blob_sha1": "1945f86869b62d990b3eac3969f98fb812135b2f"
+  },
+  {
+   "path": "pdfs/COSTCO_2023Q3_EARNINGS.pdf",
+   "size": 134636,
+   "git_blob_sha1": "6af6e95b09e5f1a42a9620e52736ac07a4722ae5"
+  },
+  {
+   "path": "pdfs/COSTCO_2023_8K_dated-2023-01-19.pdf",
+   "size": 90118,
+   "git_blob_sha1": "830edd2b6c21ee64841bafca9ec6c4ce276ce95c"
+  },
+  {
+   "path": "pdfs/COSTCO_2023_8K_dated-2023-08-09.pdf",
+   "size": 305657,
+   "git_blob_sha1": "03141c0818ae4a82cfba42208ffd1e29f5c30673"
+  },
+  {
+   "path": "pdfs/COSTCO_2023_8K_dated-2023-08-16.pdf",
+   "size": 86362,
+   "git_blob_sha1": "26a95a9943319deb99ca41a9a7a2d0cd235f1489"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2015_10K.pdf",
+   "size": 1148726,
+   "git_blob_sha1": "39f8645a976a9d2ba7b8631e46563d0af0e6ef10"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2016_10K.pdf",
+   "size": 1457647,
+   "git_blob_sha1": "3df8ce05fc69d9c680d35bedb3500e3e6002b173"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2017_10K.pdf",
+   "size": 968861,
+   "git_blob_sha1": "a89fc1c4ce64f3fb28a0306223f48c66b903726e"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2018_10K.pdf",
+   "size": 1868195,
+   "git_blob_sha1": "86b69cd2963a6b0a35491d8ffcf08da01c9680eb"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2019_10K.pdf",
+   "size": 1755827,
+   "git_blob_sha1": "e199e58708424466877057784e05bc5c21bd9bc3"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2020_10K.pdf",
+   "size": 1340219,
+   "git_blob_sha1": "9f4b557aaea26897d04317ae6a21e8ee8b4aa793"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2021_10K.pdf",
+   "size": 1619115,
+   "git_blob_sha1": "30badd41df78e7f73e97764b40db439eb635356c"
+  },
+  {
+   "path": "pdfs/CVSHEALTH_2022_10K.pdf",
+   "size": 1898137,
+   "git_blob_sha1": "305551b7e76f8ba9c4b43892b13d978c58b3f3de"
+  },
+  {
+   "path": "pdfs/EBAY_2015_10K.pdf",
+   "size": 818332,
+   "git_blob_sha1": "ed60c1ac4f776e92cd90aeb998c212f82b0af822"
+  },
+  {
+   "path": "pdfs/EBAY_2016_10K.pdf",
+   "size": 829723,
+   "git_blob_sha1": "0a87828c754e260a59981f9871703419eec3a644"
+  },
+  {
+   "path": "pdfs/EBAY_2017_10K.pdf",
+   "size": 912254,
+   "git_blob_sha1": "f303af8d832e9d20f1b6b705b357f1c0ddef0e8d"
+  },
+  {
+   "path": "pdfs/EBAY_2018_10K.pdf",
+   "size": 1399040,
+   "git_blob_sha1": "da1cb8bfc92269d5e57d930ed97b052f6db6b92b"
+  },
+  {
+   "path": "pdfs/EBAY_2019_10K.pdf",
+   "size": 1161390,
+   "git_blob_sha1": "ad275655915a80f9ef06093dab56d7b32a87349c"
+  },
+  {
+   "path": "pdfs/EBAY_2020_10K.pdf",
+   "size": 949277,
+   "git_blob_sha1": "65316ade6feffcc07ad26098d55b208e680a4bd6"
+  },
+  {
+   "path": "pdfs/EBAY_2021_10K.pdf",
+   "size": 1005333,
+   "git_blob_sha1": "8fa01d12fc6e62d64e34ea0f7f1cd3070615e7f7"
+  },
+  {
+   "path": "pdfs/EBAY_2022_10K.pdf",
+   "size": 1326258,
+   "git_blob_sha1": "73d95ee1d33a709e84748fd63b735ff540b51de3"
+  },
+  {
+   "path": "pdfs/EBAY_2023Q1_8K.pdf",
+   "size": 116136,
+   "git_blob_sha1": "6e26d1f0fcb29bcf48a31a96c11753df96f4582a"
+  },
+  {
+   "path": "pdfs/EBAY_2023Q1_EARNINGS.pdf",
+   "size": 219339,
+   "git_blob_sha1": "1150059b514993cc51027242895910348f3c46d8"
+  },
+  {
+   "path": "pdfs/EBAY_2023Q2_10Q.pdf",
+   "size": 1346336,
+   "git_blob_sha1": "ceda0de3595b5921098783226ce9d1fe5dde093b"
+  },
+  {
+   "path": "pdfs/EBAY_2023Q2_8K.pdf",
+   "size": 113167,
+   "git_blob_sha1": "88a6e8cfe665221d5fc20159aaad94bb51f1e994"
+  },
+  {
+   "path": "pdfs/EBAY_2023Q2_EARNINGS.pdf",
+   "size": 220354,
+   "git_blob_sha1": "6cd11c4288eb16995de7a06f70fa9cbba7aafd82"
+  },
+  {
+   "path": "pdfs/FEDEX_2023_10K.pdf",
+   "size": 2555043,
+   "git_blob_sha1": "8ac78ade1f5374d9bbc023864d9e9491a9359a2a"
+  },
+  {
+   "path": "pdfs/FEDEX_2023_annualreport.pdf",
+   "size": 2307753,
+   "git_blob_sha1": "3e9c5036e7eb66e8f5cf26cec8e4241dadc332d1"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2022_10K.pdf",
+   "size": 971024,
+   "git_blob_sha1": "809dff089260f35301b88f995ad0d3f94c4ee52d"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2022_10Q.pdf",
+   "size": 723598,
+   "git_blob_sha1": "a2daba53053107459b98fd53d2cf3f123f4d1dbf"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2022_8K_dated-2022-05-20.pdf",
+   "size": 116133,
+   "git_blob_sha1": "b9ca923a7e0e728e8656613c4f27b24c52a2ce8a"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2022_8K_dated_2022-08-19.pdf",
+   "size": 316459,
+   "git_blob_sha1": "924c90464df67e3f65c9ffe47df6e3f2cf3f087d"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2022_8K_dated_2023-02-21.pdf",
+   "size": 108092,
+   "git_blob_sha1": "ada4eabc746d0cd39f31fb33e73e418bca161263"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2023Q3_10Q.pdf",
+   "size": 723598,
+   "git_blob_sha1": "a2daba53053107459b98fd53d2cf3f123f4d1dbf"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2023_10K.pdf",
+   "size": 1526587,
+   "git_blob_sha1": "1486af37e842a8b392628e481b38760c2fc0ccb1"
+  },
+  {
+   "path": "pdfs/FOOTLOCKER_2023_annualreport.pdf",
+   "size": 6173185,
+   "git_blob_sha1": "f4273226ab8734d622518c4d69fbe3d4c10e6ba7"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2015_10K.pdf",
+   "size": 1330979,
+   "git_blob_sha1": "8bc542522c7e4a38569a2b749131b70e1dea9060"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2016_10K.pdf",
+   "size": 844447,
+   "git_blob_sha1": "c3e70355406ee4e86a4d441da59acc21d86abf95"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2017_10K.pdf",
+   "size": 886280,
+   "git_blob_sha1": "c3d7244a17168566fe38f10bd9d064d4b03ec756"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2018_10K.pdf",
+   "size": 1166294,
+   "git_blob_sha1": "f09f635b65190020530b773a96feb4aedd1898e8"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2019_10K.pdf",
+   "size": 920782,
+   "git_blob_sha1": "54ff2e0b33984f2b4ce028005d39d1fb7c057b37"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2020_10K.pdf",
+   "size": 2342475,
+   "git_blob_sha1": "aa43c2cd625b8823619e216003cd9673fbe9f37c"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2021_10K.pdf",
+   "size": 813588,
+   "git_blob_sha1": "15b1b1291abb9149942869f73c31f1282e4fd505"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2022_10K.pdf",
+   "size": 1083414,
+   "git_blob_sha1": "5f269a36d3d616eef9b08466badd76db0ae607ff"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2023_10K.pdf",
+   "size": 1994505,
+   "git_blob_sha1": "20cd01b3584d8ffa26117d80888009d27979c4f2"
+  },
+  {
+   "path": "pdfs/GENERALMILLS_2023_annualreport.pdf",
+   "size": 1731620,
+   "git_blob_sha1": "f0b74eebde17e208b8655705be7cd55c320fe764"
+  },
+  {
+   "path": "pdfs/INTEL_2015_10K.pdf",
+   "size": 6245151,
+   "git_blob_sha1": "c1b87f605592f752f78063b176e5f680b5e6c5dd"
+  },
+  {
+   "path": "pdfs/INTEL_2016_10K.pdf",
+   "size": 5152351,
+   "git_blob_sha1": "2caab0d6d388b6ae6fbf46578234439a873903be"
+  },
+  {
+   "path": "pdfs/INTEL_2017_10K.pdf",
+   "size": 36864629,
+   "git_blob_sha1": "22741c8bcf190ce2b3edc786f63e12a3dc467642"
+  },
+  {
+   "path": "pdfs/INTEL_2018_10K.pdf",
+   "size": 30278219,
+   "git_blob_sha1": "5334c86517989171eb35cc36061d96ab3a91fc79"
+  },
+  {
+   "path": "pdfs/INTEL_2019_10K.pdf",
+   "size": 38484035,
+   "git_blob_sha1": "e419509f401329c8d5cd517a5d5ec6d2e717e1e8"
+  },
+  {
+   "path": "pdfs/INTEL_2020_10K.pdf",
+   "size": 2512055,
+   "git_blob_sha1": "c59651d804b442699371428627959d02ac8d3e24"
+  },
+  {
+   "path": "pdfs/INTEL_2021_10K.pdf",
+   "size": 25078554,
+   "git_blob_sha1": "a1740912578ede61cce62acaafe42092e5a0ad57"
+  },
+  {
+   "path": "pdfs/INTEL_2022Q4_EARNINGS.pdf",
+   "size": 183215,
+   "git_blob_sha1": "583103876403132364337fb42c9d505882e9997c"
+  },
+  {
+   "path": "pdfs/INTEL_2022_10K.pdf",
+   "size": 24746388,
+   "git_blob_sha1": "1013c9d1cb80ac959f87ed571032a704289c03bd"
+  },
+  {
+   "path": "pdfs/INTEL_2023Q1_EARNINGS.pdf",
+   "size": 538948,
+   "git_blob_sha1": "bfd53cca40f494d9e4f08776798172c11e300d52"
+  },
+  {
+   "path": "pdfs/INTEL_2023_8K_dated-2022-11-22.pdf",
+   "size": 2414159,
+   "git_blob_sha1": "a7ea33ceaece50436bdd3bbfde5780dc560f0fe0"
+  },
+  {
+   "path": "pdfs/INTEL_2023_8K_dated-2023-02-10.pdf",
+   "size": 4161758,
+   "git_blob_sha1": "fbc9a56005fc1f56e0df70fa5a5477e8c03e032a"
+  },
+  {
+   "path": "pdfs/INTEL_2023_8K_dated-2023-08-16.pdf",
+   "size": 211264,
+   "git_blob_sha1": "c444398358f30af85a4e77b0f66bdca0befb7eaa"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2015_10K.pdf",
+   "size": 2015815,
+   "git_blob_sha1": "7f2fbd7cb67fea26828f5303864c1ad90fdc514a"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2016_10K.pdf",
+   "size": 2110124,
+   "git_blob_sha1": "563b98d2c338134c13030de06d61a261892d38f2"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2017_10K.pdf",
+   "size": 2265401,
+   "git_blob_sha1": "95f298bd05676636125248314c9e9acaf1067776"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2018_10K.pdf",
+   "size": 2672053,
+   "git_blob_sha1": "9f0c0bb7ba726d4fa3c7a020c99899b7adbc49b4"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2019_10K.pdf",
+   "size": 2694796,
+   "git_blob_sha1": "dee9800937c751c1f179e01b2379a0f3835a5720"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2020_10K.pdf",
+   "size": 2109544,
+   "git_blob_sha1": "185c2fc1560939fe060020e57dd93cbf6f4389db"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2021_10K.pdf",
+   "size": 2001016,
+   "git_blob_sha1": "764529090039d32340e224ce07a9832afb1b7064"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2022Q4_EARNINGS.pdf",
+   "size": 729392,
+   "git_blob_sha1": "759d000650c2aea41356f9a6f4229be62fe977f3"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2022_10K.pdf",
+   "size": 1941368,
+   "git_blob_sha1": "eba313ca98f81a2cabc19c7dd931c92c3def3a66"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2023Q1_EARNINGS.pdf",
+   "size": 942096,
+   "git_blob_sha1": "62130eaa36f7a8a6cf5e0dffd83da94f4ae41f37"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2023Q2_EARNINGS.pdf",
+   "size": 1212840,
+   "git_blob_sha1": "0da3128432142f265e2b703a40d2f8adc904300a"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2023_8K_dated-2023-08-23.pdf",
+   "size": 44188,
+   "git_blob_sha1": "27f825f01f906c6ebc5f6a0e46fb3ada89dd04ba"
+  },
+  {
+   "path": "pdfs/JOHNSON_JOHNSON_2023_8K_dated-2023-08-30.pdf",
+   "size": 455282,
+   "git_blob_sha1": "f4fa338d9d15baa099a60468e66df0c87e106d52"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2021Q1_10Q.pdf",
+   "size": 2285253,
+   "git_blob_sha1": "ae433e63725e78d0132001bfafe5bcdc97f65b26"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2021Q2_10Q.pdf",
+   "size": 2649497,
+   "git_blob_sha1": "2a69075634e1e33f9f7590b535e2204ce81847f2"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2021Q3_10Q.pdf",
+   "size": 2685049,
+   "git_blob_sha1": "17f5eb57114555f3625981238c2ff4f2e9d776d4"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2021_10K.pdf",
+   "size": 5844405,
+   "git_blob_sha1": "79f7341d8c69e38f72116a1722a0b635f3019cfc"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2022Q1_10Q.pdf",
+   "size": 1985223,
+   "git_blob_sha1": "505e811f9cbe38771358a257f364b999ab84abb5"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2022Q2_10Q.pdf",
+   "size": 2290421,
+   "git_blob_sha1": "f6b21788fd5277349db5e3e513d9326a5f811769"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2022Q3_10Q.pdf",
+   "size": 2313104,
+   "git_blob_sha1": "632b7668e7e901e22f94032a51af094df41838ab"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2022_10K.pdf",
+   "size": 6947859,
+   "git_blob_sha1": "d5261349ab800bad30422bc05dedaa8ad2a329b5"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2023Q1_10Q.pdf",
+   "size": 2037946,
+   "git_blob_sha1": "98821c817e2d87cd025c5a5c23050cdd2545d64d"
+  },
+  {
+   "path": "pdfs/JPMORGAN_2023Q2_10Q.pdf",
+   "size": 2573600,
+   "git_blob_sha1": "c43dd56d3917d866ad3404b102bf6ea769000360"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2015_10K.pdf",
+   "size": 1300738,
+   "git_blob_sha1": "8e87d874504af7578455251e56cfc7079c6c7a25"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2016_10K.pdf",
+   "size": 1417551,
+   "git_blob_sha1": "520d56b0f15c96446f471ec2f3b62093b50f02d3"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2017_10K.pdf",
+   "size": 1549180,
+   "git_blob_sha1": "af1df2fc9f3db5e03510d70dd089ac52d9043eb6"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2018_10K.pdf",
+   "size": 3283287,
+   "git_blob_sha1": "1a32dfa32c2122b0d33ade21654b87fcb1644cb2"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2019_10K.pdf",
+   "size": 1531923,
+   "git_blob_sha1": "4068e6bd710c89d1752497245b0a9b6deff58a93"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2020_10K.pdf",
+   "size": 1696414,
+   "git_blob_sha1": "1464993d16291fdc76b9c2bcda93eae6b68c4fbd"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2021_10K.pdf",
+   "size": 1468714,
+   "git_blob_sha1": "8127eba1224d56d7a6267f8d2536bc37a75747ab"
+  },
+  {
+   "path": "pdfs/KRAFTHEINZ_2022_10K.pdf",
+   "size": 3133684,
+   "git_blob_sha1": "7c085d9ce127e6d846648ab8a5058ce6f9f60cbd"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2015_10K.pdf",
+   "size": 1248903,
+   "git_blob_sha1": "e64806133f877f6c9a74089f4ee877e58fe79cd6"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2016_10K.pdf",
+   "size": 1793681,
+   "git_blob_sha1": "ba2c29fb642acc3e844d06cd0946f16b965524b9"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2017_10K.pdf",
+   "size": 1758027,
+   "git_blob_sha1": "8bc8d41873e9bd8064c21e22148f0b00818c084a"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2018_10K.pdf",
+   "size": 1487228,
+   "git_blob_sha1": "12e6bd6dea1b771d780f41f144d537ebfeaee08d"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2019_10K.pdf",
+   "size": 1335683,
+   "git_blob_sha1": "0e896f80611dfaba731c5c2744efcdfa4f4f4228"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2020_10K.pdf",
+   "size": 1372193,
+   "git_blob_sha1": "bc86a5da3b2ddc9cc829da67958f69b922afa4ad"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2021_10K.pdf",
+   "size": 1347017,
+   "git_blob_sha1": "9360fa058239be76eaa65278a140af57088f84d0"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2022Q2_10Q.pdf",
+   "size": 709630,
+   "git_blob_sha1": "1c303db30c3c59f25df48e8294e2df5e474b10e7"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2022_10K.pdf",
+   "size": 1398312,
+   "git_blob_sha1": "4f9c32b55353726417b1021c919012020fcb102b"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2023Q1_10Q.pdf",
+   "size": 382177,
+   "git_blob_sha1": "53d3a0ac833e8435b84690cac0ffdd04dcca30b9"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2023Q2_10Q.pdf",
+   "size": 792027,
+   "git_blob_sha1": "10e767d2d6f605383cffa18a379645d2b76c6d51"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2023_8K_dated-2023-05-25.pdf",
+   "size": 537276,
+   "git_blob_sha1": "11d682d2f606040f9d34af4b8ce817bc8a148c67"
+  },
+  {
+   "path": "pdfs/LOCKHEEDMARTIN_2023_8K_dated-2023-08-24.pdf",
+   "size": 104681,
+   "git_blob_sha1": "f60b21364a4ae0d3bf53def4c895a9e848000d2a"
+  },
+  {
+   "path": "pdfs/MCDONALDS_2022Q4_EARNINGS.pdf",
+   "size": 525016,
+   "git_blob_sha1": "ee9563f11aa1c717ef3a8bc146044629fd13bb58"
+  },
+  {
+   "path": "pdfs/MCDONALDS_2022_10K.pdf",
+   "size": 1529243,
+   "git_blob_sha1": "cce1a9ae714086eb142bc94e3646130d84f37fe0"
+  },
+  {
+   "path": "pdfs/MCDONALDS_2023Q1_EARNINGS.pdf",
+   "size": 101217,
+   "git_blob_sha1": "dd2500d73a2cc15a5154df4dc80262191c20d931"
+  },
+  {
+   "path": "pdfs/MCDONALDS_2023Q2_EARNINGS.pdf",
+   "size": 306936,
+   "git_blob_sha1": "be8da262bd138821cbfa08176340e56c6470493e"
+  },
+  {
+   "path": "pdfs/MCDONALDS_8K_dated-2023-01-06.pdf",
+   "size": 199859,
+   "git_blob_sha1": "35031b95cd3594ace93901b329a11d5268829212"
+  },
+  {
+   "path": "pdfs/MCDONALDS_8K_dated-2023-02-13.pdf",
+   "size": 109585,
+   "git_blob_sha1": "37da5820a0e6cf30f28c5034b72a7bc73fbc458a"
+  },
+  {
+   "path": "pdfs/MCDONALDS_8K_dated-2023-08-14.pdf",
+   "size": 140828,
+   "git_blob_sha1": "745ef51b355cf0a38e38a05c201f4eda0612c0bb"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2015_10K.pdf",
+   "size": 1465159,
+   "git_blob_sha1": "71d1133b0aec7929d60995e05d34d3ebd0247e02"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2016_10K.pdf",
+   "size": 2257525,
+   "git_blob_sha1": "f048732e80d66ee7899a7e7225fea33c90f69b03"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2017_10K.pdf",
+   "size": 1398714,
+   "git_blob_sha1": "e466c4689212e492b8b020c46df4e2298ee64b74"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2018_10K.pdf",
+   "size": 1421540,
+   "git_blob_sha1": "80764cd60ba86b4f343dd29d3fbabc38c1570138"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2019_10K.pdf",
+   "size": 1664093,
+   "git_blob_sha1": "2f36b4c2257ea8c608548742867e39a34e280fe7"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2020_10K.pdf",
+   "size": 1383002,
+   "git_blob_sha1": "efd195f187164ad95b4251e15f67985adf1f78d9"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2021_10K.pdf",
+   "size": 1446235,
+   "git_blob_sha1": "a6f0b6218b131c1d5bb8fee6e691a8cc895e3cad"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2022Q4_EARNINGS.pdf",
+   "size": 737922,
+   "git_blob_sha1": "8fee8e110352e31f9e9a3c04d5a26d1a7926a361"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2022_10K.pdf",
+   "size": 1755866,
+   "git_blob_sha1": "87bc94d8dbfa31ca1bc93ff138b448823845d4ca"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2023Q2_10Q.pdf",
+   "size": 661891,
+   "git_blob_sha1": "4c1d85b158083977504d11fb8a39612b4d424c89"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2023_8K_dated-2023-03-01.pdf",
+   "size": 137149,
+   "git_blob_sha1": "728f88c2d32624857c83a14d99ef9fa2647b46b7"
+  },
+  {
+   "path": "pdfs/MGMRESORTS_2023_8K_dated-2023-09-12.pdf",
+   "size": 126773,
+   "git_blob_sha1": "e48d920d08e34cbea938627bc95a36cb161079ff"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2015_10K.pdf",
+   "size": 925162,
+   "git_blob_sha1": "e043f2bca3398e16951d29d6e02447d6f194272d"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2016_10K.pdf",
+   "size": 838415,
+   "git_blob_sha1": "9518394bd80b8e55ae50374045e7d6d2bd42bcce"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2017_10K.pdf",
+   "size": 924558,
+   "git_blob_sha1": "aa56b3f64176674183c632262d92f55b4476704a"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2018_10K.pdf",
+   "size": 1007036,
+   "git_blob_sha1": "77ed5042c41976da0477c99e2a6b3a5079c2c12e"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2019_10K.pdf",
+   "size": 1111773,
+   "git_blob_sha1": "c727e7959de35561a97493022775111099541c13"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2020_10K.pdf",
+   "size": 902353,
+   "git_blob_sha1": "3c6057ea03ac92c513c1f7a8cdb7fea79e81b285"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2021_10K.pdf",
+   "size": 880287,
+   "git_blob_sha1": "23962a6a2308574a980ca06c415820d1800be1ab"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2022_10K.pdf",
+   "size": 877980,
+   "git_blob_sha1": "1d7e96c11171bb4a46eaa928a0335ba03d0bffa0"
+  },
+  {
+   "path": "pdfs/MICROSOFT_2023_10K.pdf",
+   "size": 726155,
+   "git_blob_sha1": "6f854500dd98a858d01eb81e4be859548d06c91e"
+  },
+  {
+   "path": "pdfs/NETFLIX_2015_10K.pdf",
+   "size": 578489,
+   "git_blob_sha1": "760e1d5c344c3fe31c14ac367a4a8789f239b5b0"
+  },
+  {
+   "path": "pdfs/NETFLIX_2016_10K.pdf",
+   "size": 577535,
+   "git_blob_sha1": "071981c60a84a56184685c1f05bd3408c31a6bd8"
+  },
+  {
+   "path": "pdfs/NETFLIX_2017_10K.pdf",
+   "size": 651011,
+   "git_blob_sha1": "8e5a584c32cd03d8ca615018fdbe14556e7eda63"
+  },
+  {
+   "path": "pdfs/NETFLIX_2018_10K.pdf",
+   "size": 702272,
+   "git_blob_sha1": "0d1d066945caf9a2b6d5290d83fa111042acd9a3"
+  },
+  {
+   "path": "pdfs/NETFLIX_2019_10K.pdf",
+   "size": 681746,
+   "git_blob_sha1": "cfea8c9ac87981abd55417c5864f1a8c36b1b62c"
+  },
+  {
+   "path": "pdfs/NETFLIX_2020_10K.pdf",
+   "size": 674503,
+   "git_blob_sha1": "b6a4b00f907db8c29440696445333d2862d09ef1"
+  },
+  {
+   "path": "pdfs/NETFLIX_2021_10K.pdf",
+   "size": 1476677,
+   "git_blob_sha1": "d886308ec56541d05a581debb2bb4cb2859cc1de"
+  },
+  {
+   "path": "pdfs/NETFLIX_2022_10K.pdf",
+   "size": 794637,
+   "git_blob_sha1": "161cee711419055c1eb3c27dcd844b5ab9adb1b3"
+  },
+  {
+   "path": "pdfs/NETFLIX_2023Q2_10Q.pdf",
+   "size": 380564,
+   "git_blob_sha1": "2eb16c49d027924b2c98bd2ab73d5a2123319071"
+  },
+  {
+   "path": "pdfs/NIKE_2015_10K.pdf",
+   "size": 2014748,
+   "git_blob_sha1": "68f48323c36ddec36c13d2014d4551a635977b1c"
+  },
+  {
+   "path": "pdfs/NIKE_2016_10K.pdf",
+   "size": 943152,
+   "git_blob_sha1": "d9cb536151c6943bee93749129e309bc6c802546"
+  },
+  {
+   "path": "pdfs/NIKE_2017_10K.pdf",
+   "size": 935319,
+   "git_blob_sha1": "0da05b30ef66ce75d045030cf4b5bf9302eb1691"
+  },
+  {
+   "path": "pdfs/NIKE_2018_10K.pdf",
+   "size": 962221,
+   "git_blob_sha1": "273e6ebbedcb48346495f4bb50ac887991a5c858"
+  },
+  {
+   "path": "pdfs/NIKE_2019_10K.pdf",
+   "size": 909932,
+   "git_blob_sha1": "1171f82c2fe1db05766014612150a703225362a4"
+  },
+  {
+   "path": "pdfs/NIKE_2020_10K.pdf",
+   "size": 955558,
+   "git_blob_sha1": "703a28ee270ef7f4a72391af075c779bc8be38af"
+  },
+  {
+   "path": "pdfs/NIKE_2021_10K.pdf",
+   "size": 877882,
+   "git_blob_sha1": "63761b6954735b2d057424e8a056c82bb58ffdb7"
+  },
+  {
+   "path": "pdfs/NIKE_2022_10K.pdf",
+   "size": 2255285,
+   "git_blob_sha1": "4f437d9cfdc76e74226569daaf544fa5438e83de"
+  },
+  {
+   "path": "pdfs/NIKE_2023_10K.pdf",
+   "size": 3463188,
+   "git_blob_sha1": "a37516e7887338a6640bba36dae93943ff08aa97"
+  },
+  {
+   "path": "pdfs/ORACLE_2015_10K.pdf",
+   "size": 1674676,
+   "git_blob_sha1": "b1b7ab5771620a6b526789c9f8ecb50634892958"
+  },
+  {
+   "path": "pdfs/ORACLE_2016_10K.pdf",
+   "size": 987706,
+   "git_blob_sha1": "d58b9e06aab161e62cf39f466a7ced2ce07d286a"
+  },
+  {
+   "path": "pdfs/ORACLE_2017_10K.pdf",
+   "size": 933007,
+   "git_blob_sha1": "a5f196be5f0e1fd8afc0017360a48a23e453c88e"
+  },
+  {
+   "path": "pdfs/ORACLE_2018_10K.pdf",
+   "size": 1088934,
+   "git_blob_sha1": "9c304d571fa29761258620142fc94e031768cce3"
+  },
+  {
+   "path": "pdfs/ORACLE_2019_10K.pdf",
+   "size": 1133803,
+   "git_blob_sha1": "3a2617e1f46a89483547c410dae8616181bc3bfe"
+  },
+  {
+   "path": "pdfs/ORACLE_2020_10K.pdf",
+   "size": 1044886,
+   "git_blob_sha1": "74e03b7659c16490ee03c3fa08cb66ed20d9d865"
+  },
+  {
+   "path": "pdfs/ORACLE_2021_10K.pdf",
+   "size": 1037893,
+   "git_blob_sha1": "fef4c8ac1ac9135a08ab0fc22d87ba840dad8bfb"
+  },
+  {
+   "path": "pdfs/ORACLE_2022_10K.pdf",
+   "size": 1544204,
+   "git_blob_sha1": "059d9053bc918e189dc30be819dff6e35d2dd86e"
+  },
+  {
+   "path": "pdfs/ORACLE_2023_10K.pdf",
+   "size": 1742303,
+   "git_blob_sha1": "68b5c0a07040176c54e11ec21075f18074c4d469"
+  },
+  {
+   "path": "pdfs/PAYPAL_2022_10K.pdf",
+   "size": 4371232,
+   "git_blob_sha1": "386c8e47ac482e2ffb6dad3b5be1bb2af3ecfd2d"
+  },
+  {
+   "path": "pdfs/PAYPAL_2023Q2_10Q.pdf",
+   "size": 1283070,
+   "git_blob_sha1": "df44df1095809bdd865469c3784057369c4af8fc"
+  },
+  {
+   "path": "pdfs/PEPSICO_2015_10K.pdf",
+   "size": 1236627,
+   "git_blob_sha1": "78d83b82252384307d921d20f0ff2a2fb9c9664a"
+  },
+  {
+   "path": "pdfs/PEPSICO_2016_10K.pdf",
+   "size": 2186522,
+   "git_blob_sha1": "92e613eb8679ad68254d1bc8b7ec84c802f422f5"
+  },
+  {
+   "path": "pdfs/PEPSICO_2017_10K.pdf",
+   "size": 2183951,
+   "git_blob_sha1": "56a031566a69c59e22e1077fb212d1637b58f16a"
+  },
+  {
+   "path": "pdfs/PEPSICO_2018_10K.pdf",
+   "size": 2029488,
+   "git_blob_sha1": "4a72e842e43c54aa38d3b196d7fa8ce145f86db4"
+  },
+  {
+   "path": "pdfs/PEPSICO_2019_10K.pdf",
+   "size": 2443245,
+   "git_blob_sha1": "a1c76164b0a8dfe57492a134f52a2392ae757f14"
+  },
+  {
+   "path": "pdfs/PEPSICO_2020_10K.pdf",
+   "size": 2288916,
+   "git_blob_sha1": "9984a539af08b121e1cc0802909930ebbd049f42"
+  },
+  {
+   "path": "pdfs/PEPSICO_2021_10K.pdf",
+   "size": 2139398,
+   "git_blob_sha1": "e59a31ad864f615431502b54118979a3d59ade78"
+  },
+  {
+   "path": "pdfs/PEPSICO_2022Q4_EARNINGS.pdf",
+   "size": 1028887,
+   "git_blob_sha1": "a409189f1a809d0f18763df3c981be35eb03b811"
+  },
+  {
+   "path": "pdfs/PEPSICO_2022_10K.pdf",
+   "size": 2993516,
+   "git_blob_sha1": "134ea1bdc7845749d42407fe0eade31034e117c6"
+  },
+  {
+   "path": "pdfs/PEPSICO_2023Q1_EARNINGS.pdf",
+   "size": 987394,
+   "git_blob_sha1": "3d804f262df68fc7fdc08ea53ff020fd828256ba"
+  },
+  {
+   "path": "pdfs/PEPSICO_2023Q2_EARNINGS.pdf",
+   "size": 1014091,
+   "git_blob_sha1": "7763d52a2d32a981c3624b133813df891eabf6fb"
+  },
+  {
+   "path": "pdfs/PEPSICO_2023_8K_dated-2023-05-05.pdf",
+   "size": 102321,
+   "git_blob_sha1": "62aa4249b7ac0f2f12a7028ff7c74511ea7d1e71"
+  },
+  {
+   "path": "pdfs/PEPSICO_2023_8K_dated-2023-05-30.pdf",
+   "size": 1460889,
+   "git_blob_sha1": "f052f1a5162fdb989d095e68d338a3c053a1e5db"
+  },
+  {
+   "path": "pdfs/PFIZER_2015_10K.pdf",
+   "size": 1726062,
+   "git_blob_sha1": "5fc167d5279a85ed873ff0df51357440d63f69d4"
+  },
+  {
+   "path": "pdfs/PFIZER_2016_10K.pdf",
+   "size": 1757373,
+   "git_blob_sha1": "a5222c50e149bc639d3b483eda7d0b94255dfc73"
+  },
+  {
+   "path": "pdfs/PFIZER_2017_10K.pdf",
+   "size": 2309546,
+   "git_blob_sha1": "d6d02e7a8c89d2b772b15078f047c4304ad65241"
+  },
+  {
+   "path": "pdfs/PFIZER_2018_10K.pdf",
+   "size": 2976762,
+   "git_blob_sha1": "feec03504b88851bc91b5a7d7a3e18fdb61390c4"
+  },
+  {
+   "path": "pdfs/PFIZER_2019_10K.pdf",
+   "size": 2043092,
+   "git_blob_sha1": "17a90c98a35a0e2616b976057cb3ce96331c175b"
+  },
+  {
+   "path": "pdfs/PFIZER_2020_10K.pdf",
+   "size": 1295394,
+   "git_blob_sha1": "a683c2a3d2fef6615f588427b46ecc1f5a232906"
+  },
+  {
+   "path": "pdfs/PFIZER_2021_10K.pdf",
+   "size": 1171782,
+   "git_blob_sha1": "48068532737cfa8ea27f898c1572b8901b7ccf1d"
+  },
+  {
+   "path": "pdfs/PFIZER_2022_10K.pdf",
+   "size": 2231275,
+   "git_blob_sha1": "5ae33d4cffb6054c0dd5def1d89682040a018343"
+  },
+  {
+   "path": "pdfs/PFIZER_2023Q2_EARNINGS.pdf",
+   "size": 343582,
+   "git_blob_sha1": "abb634e1ebeef3f3a2ccfbcb6009bb5081d5c570"
+  },
+  {
+   "path": "pdfs/PG_E_2015_10K.pdf",
+   "size": 1309123,
+   "git_blob_sha1": "39d5ea169ffbaf1bafc19dc6b22cb306b29dbb26"
+  },
+  {
+   "path": "pdfs/PG_E_2016_10K.pdf",
+   "size": 1400317,
+   "git_blob_sha1": "5774b2aae5be33675e52eb4c6b26948b39820059"
+  },
+  {
+   "path": "pdfs/PG_E_2017_10K.pdf",
+   "size": 1530105,
+   "git_blob_sha1": "cb9033078334907a35b743592fdb3b98d8ac4711"
+  },
+  {
+   "path": "pdfs/PG_E_2018_10K.pdf",
+   "size": 1448352,
+   "git_blob_sha1": "767ad1824ff7f18add80b811e2ed78214a7d5078"
+  },
+  {
+   "path": "pdfs/PG_E_2019_10K.pdf",
+   "size": 2340050,
+   "git_blob_sha1": "f6f9843aca0ae0eb721d221a63168b59b6be6807"
+  },
+  {
+   "path": "pdfs/PG_E_2020_10K.pdf",
+   "size": 2137294,
+   "git_blob_sha1": "076e2842b9ee817fd95a393b3010d0d57d292525"
+  },
+  {
+   "path": "pdfs/PG_E_2021_10K.pdf",
+   "size": 2683080,
+   "git_blob_sha1": "00f6686e5d9592e297051e5a8d5cdaa702196103"
+  },
+  {
+   "path": "pdfs/PG_E_2022_10K.pdf",
+   "size": 3072849,
+   "git_blob_sha1": "1898f157ffd0aeb72732d5f0bc1881c619a442b7"
+  },
+  {
+   "path": "pdfs/PG_E_2023Q3_10Q.pdf",
+   "size": 3328915,
+   "git_blob_sha1": "9618a1f33a76c35106b0ac75a480cf00f20ac24a"
+  },
+  {
+   "path": "pdfs/PG_E_2023_EARNINGS-dated-2023-06-01.pdf",
+   "size": 620932,
+   "git_blob_sha1": "0daab007723577dcdf5d45814fc49766d6b8343b"
+  },
+  {
+   "path": "pdfs/PG_E_2023_EARNINGS-dated-2023-07-27.pdf",
+   "size": 199186,
+   "git_blob_sha1": "c7e3146c4bf501b88de41fde78298339233b0c02"
+  },
+  {
+   "path": "pdfs/PG_E_2023_EARNINGS_dated-2023-05-04.pdf",
+   "size": 182134,
+   "git_blob_sha1": "34e1eb92dcaa19fc2ef3d9585a3dfb840d05016d"
+  },
+  {
+   "path": "pdfs/PG_E_2023_EARNINGS_dated-2023-05-31.pdf",
+   "size": 270593,
+   "git_blob_sha1": "feb41b1bd9432cca9ada0c68fe8fcbfb030b26ed"
+  },
+  {
+   "path": "pdfs/Pfizer_2023Q2_10Q.pdf",
+   "size": 743533,
+   "git_blob_sha1": "3b81e029708bab90de3e511dbc1bb029e744aee3"
+  },
+  {
+   "path": "pdfs/SALESFORCE_2021_8K_dated-2021-07-21.pdf",
+   "size": 188817,
+   "git_blob_sha1": "e1948318f971b20673be41d00036b4891b44d7e7"
+  },
+  {
+   "path": "pdfs/SALESFORCE_2021_8K_dated-2023-01-04.pdf",
+   "size": 126810,
+   "git_blob_sha1": "71a8a0c40aa4fecaafbd5e464a4f56a684a8566f"
+  },
+  {
+   "path": "pdfs/SALESFORCE_2023Q3_10Q.pdf",
+   "size": 990194,
+   "git_blob_sha1": "10cc1f7c6dc75c3374e1106112e4174632ed030e"
+  },
+  {
+   "path": "pdfs/SALESFORCE_2023_10K.pdf",
+   "size": 1386171,
+   "git_blob_sha1": "1009b3f3a99a753dd1fefbc17fb9c0a3a7f83512"
+  },
+  {
+   "path": "pdfs/SALESFORCE_2024Q1_EARNINGS.pdf",
+   "size": 404147,
+   "git_blob_sha1": "71da8fcfea2e96afe551622f15f638388dbdb75e"
+  },
+  {
+   "path": "pdfs/SALESFORCE_2024Q2_EARNINGS.pdf",
+   "size": 354468,
+   "git_blob_sha1": "321581e8cf45a41d20a803fb29507beb21d1decf"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2023Q1_EARNINGS.pdf",
+   "size": 97671,
+   "git_blob_sha1": "be741f01c8664e2886d9cc2f35f17cd8b2cde648"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2023Q2_EARNINGS.pdf",
+   "size": 106346,
+   "git_blob_sha1": "1ff86b196e69f1bc4e5835382301c9f5751aa80c"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2023Q4_EARNINGS.pdf",
+   "size": 99758,
+   "git_blob_sha1": "d88813e10c0992f31c683a1f6a73ba37632f45d7"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2023_10K.pdf",
+   "size": 4954215,
+   "git_blob_sha1": "da46ba0a72de42552a5c0f9ae0801f19e513d494"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2023_8K_dated-2023-06-07.pdf",
+   "size": 222058,
+   "git_blob_sha1": "0d2807f1a11b65dd6bb945b7a09c1159f443e375"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2023_8K_dated-2023-09-18.pdf",
+   "size": 63520,
+   "git_blob_sha1": "a66ac8a8ee841b622ed0c6376a356e60d393810e"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2024Q1_EARNINGS.pdf",
+   "size": 97671,
+   "git_blob_sha1": "be741f01c8664e2886d9cc2f35f17cd8b2cde648"
+  },
+  {
+   "path": "pdfs/ULTABEAUTY_2024Q2_EARNINGS.pdf",
+   "size": 106346,
+   "git_blob_sha1": "1ff86b196e69f1bc4e5835382301c9f5751aa80c"
+  },
+  {
+   "path": "pdfs/VERIZON_2015_10K.pdf",
+   "size": 1035337,
+   "git_blob_sha1": "bb2bd1c74e4f75cea08edaaa5b55f7261e5e509c"
+  },
+  {
+   "path": "pdfs/VERIZON_2016_10K.pdf",
+   "size": 1057355,
+   "git_blob_sha1": "d18683f70a496d3ecce45318c4a5acacdb8a7e5d"
+  },
+  {
+   "path": "pdfs/VERIZON_2017_10K.pdf",
+   "size": 1250536,
+   "git_blob_sha1": "890cac46bfaf61f233ef245cbc50b341a8585b42"
+  },
+  {
+   "path": "pdfs/VERIZON_2018_10K.pdf",
+   "size": 1434299,
+   "git_blob_sha1": "897ea7af02126846bf54e8056a5e68d18ff70035"
+  },
+  {
+   "path": "pdfs/VERIZON_2019_10K.pdf",
+   "size": 1172186,
+   "git_blob_sha1": "6769a298d893587a4390da8b5068ee6549939d91"
+  },
+  {
+   "path": "pdfs/VERIZON_2020_10K.pdf",
+   "size": 1421020,
+   "git_blob_sha1": "c8b5010bcd934de05ef302bdce7715af4f73f4f7"
+  },
+  {
+   "path": "pdfs/VERIZON_2021_10K.pdf",
+   "size": 2098068,
+   "git_blob_sha1": "b881c9eb795f024055ffdb16b3e7d43af59a50b3"
+  },
+  {
+   "path": "pdfs/VERIZON_2022_10K.pdf",
+   "size": 2315268,
+   "git_blob_sha1": "92473150ab26a2f8419989bcd2d825c760424f8c"
+  },
+  {
+   "path": "pdfs/WALMART_2015_10K.pdf",
+   "size": 1208739,
+   "git_blob_sha1": "0656fa719df739822bcf322802d2215d2c8aca6c"
+  },
+  {
+   "path": "pdfs/WALMART_2016_10K.pdf",
+   "size": 1343987,
+   "git_blob_sha1": "7625c032ed780a8f381ab11fdc31e8ba32e0f1ad"
+  },
+  {
+   "path": "pdfs/WALMART_2017_10K.pdf",
+   "size": 1152029,
+   "git_blob_sha1": "a9c2cda3204898edad0fbbcd73e0dcda0fb52423"
+  },
+  {
+   "path": "pdfs/WALMART_2018_10K.pdf",
+   "size": 1599075,
+   "git_blob_sha1": "b2a5c9c96d60f8c1c689437a26f9b409ce3f8f17"
+  },
+  {
+   "path": "pdfs/WALMART_2019_10K.pdf",
+   "size": 7211754,
+   "git_blob_sha1": "7da6857bbca8b38efba99ee22a3ee14630f6a839"
+  },
+  {
+   "path": "pdfs/WALMART_2020_10K.pdf",
+   "size": 1132390,
+   "git_blob_sha1": "d72cdbf95f9163423470c284cdda3550daeba4df"
+  },
+  {
+   "path": "pdfs/WALMART_2021_10K.pdf",
+   "size": 784527,
+   "git_blob_sha1": "9084afa0ed232ea64a552088ec37e17a1be3639c"
+  },
+  {
+   "path": "pdfs/WALMART_2022_10K.pdf",
+   "size": 1503396,
+   "git_blob_sha1": "e1f32b34f2350b754f1c9721c627b703156402f0"
+  },
+  {
+   "path": "pdfs/WALMART_2023_10K.pdf",
+   "size": 1742387,
+   "git_blob_sha1": "171f702fbd7804fee23a058721654c1d1fe5e428"
+  },
+  {
+   "path": "pdfs/WALMART_2023_annualreport.pdf",
+   "size": 1611721,
+   "git_blob_sha1": "4346d6be00570a394faeceb383f758d19b55922e"
+  },
+  {
+   "path": "pdfs/WALMART_2024Q1_10Q.pdf",
+   "size": 493204,
+   "git_blob_sha1": "356bdfc0f82e63b28ae42ccc3fa803ced0bb2be0"
+  },
+  {
+   "path": "results/claude-2_inContext.jsonl",
+   "size": 341362,
+   "git_blob_sha1": "7f2ae9201e724784b59fb0455a254df8f54d9f38"
+  },
+  {
+   "path": "results/claude-2_inContext_reverse.jsonl",
+   "size": 197644,
+   "git_blob_sha1": "31991b9bc6d135431673869676676047202ddc85"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_closedBook.jsonl",
+   "size": 259890,
+   "git_blob_sha1": "e9758db6710f9549ddb0995e79fe90619f41d979"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_inContext.jsonl",
+   "size": 317979,
+   "git_blob_sha1": "235c5693afde9d0d27bc9606543f421df01eb90d"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_inContext_reverse.jsonl",
+   "size": 179836,
+   "git_blob_sha1": "48ce119af3e53eb1e3aa5a67913a4049aefc1e26"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_oracle.jsonl",
+   "size": 224879,
+   "git_blob_sha1": "bff7bfc7ab4c272e8e6e876e539858eb83b1d582"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_oracle_reverse.jsonl",
+   "size": 204962,
+   "git_blob_sha1": "16906f39eaa868a461352e8fbe013148d951a743"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_sharedStore.jsonl",
+   "size": 160311,
+   "git_blob_sha1": "c750bff0295d0304fb1e6f9e7528e57a1812dae6"
+  },
+  {
+   "path": "results/gpt-4-1106-preview_singleStore.jsonl",
+   "size": 180420,
+   "git_blob_sha1": "0071f7036fec6cf1fef4867388411932c34c0789"
+  },
+  {
+   "path": "results/gpt-4_closedBook.jsonl",
+   "size": 118330,
+   "git_blob_sha1": "5b2408ed179bcc5a69bcf0227e50cb0e01dbf88e"
+  },
+  {
+   "path": "results/gpt-4_oracle.jsonl",
+   "size": 121667,
+   "git_blob_sha1": "44f52b8382346ed34a22e21c31d9e5a96f52acf6"
+  },
+  {
+   "path": "results/gpt-4_oracle_reverse.jsonl",
+   "size": 123259,
+   "git_blob_sha1": "d8628449873819ed8f8a57e70d2e024d1c7299c0"
+  },
+  {
+   "path": "results/gpt-4_sharedStore.jsonl",
+   "size": 93778,
+   "git_blob_sha1": "3ab82459d85192c4ca892582bf44f4e4aec0f691"
+  },
+  {
+   "path": "results/gpt-4_singleStore.jsonl",
+   "size": 108429,
+   "git_blob_sha1": "25bfb4ac53e6bc831b959400972397b1d345063c"
+  },
+  {
+   "path": "results/llama2_sharedStore.jsonl",
+   "size": 159485,
+   "git_blob_sha1": "b5e5504e5fc50465b1a00a50f0ee5c0265e052be"
+  },
+  {
+   "path": "results/llama2_singleStore.jsonl",
+   "size": 156158,
+   "git_blob_sha1": "832f08128df3ad9207dc2ee86fa5710fde3afce9"
+  },
+  {
+   "path": "vectorstores/README.md",
+   "size": 39,
+   "git_blob_sha1": "2d72261b38d5187fb97a42c8f78c10356d34be59"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "model": "gemini-3.8-flash",
+ "edit": "injected",
+ "groups": {
+  "injected": {
+   "cases": 45,
+   "asked": 45,
+   "read_correctly_before": 45,
+   "settings": {
+    "defended": {
+     "new": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "old": {
+      "mean": 1.0,
+      "lo": 0.9213484012671117,
+      "hi": 1.0,
+      "n_cases": 45
+     },
+     "both": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "declined": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "other": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "shows_both": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "leads_old": {
+      "mean": 1.0,
+      "lo": 0.9213484012671117,
+      "hi": 1.0,
+      "n_cases": 45
+     },
+     "leads_new": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "old_unmarked": {
+      "mean": 1.0,
+      "lo": 0.9213484012671117,
+      "hi": 1.0,
+      "n_cases": 45
+     },
+     "n_answers": 135
+    },
+    "plain": {
+     "new": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "old": {
+      "mean": 1.0,
+      "lo": 0.9213484012671117,
+      "hi": 1.0,
+      "n_cases": 45
+     },
+     "both": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "declined": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "other": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "shows_both": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "leads_old": {
+      "mean": 1.0,
+      "lo": 0.9213484012671117,
+      "hi": 1.0,
+      "n_cases": 45
+     },
+     "leads_new": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.07865159873288836,
+      "n_cases": 45
+     },
+     "old_unmarked": {
+      "mean": 1.0,
+      "lo": 0.9213484012671117,
+      "hi": 1.0,
+      "n_cases": 45
+     },
+     "n_answers": 135
+    }
+   }
+  }
+ }
+}

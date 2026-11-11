@@ -1,0 +1,34 @@
+{
+ "filing": "3M_2018_10K",
+ "line": "Less: Cash, cash equivalents and marketable securities",
+ "page": 43,
+ "old_amount": "3,270",
+ "new_amount": "4,237",
+ "first_index": {
+  "num_added": 635,
+  "num_updated": 0,
+  "num_skipped": 0,
+  "num_deleted": 0,
+  "seconds": 4.04
+ },
+ "after_amendment": {
+  "num_added": 1,
+  "num_updated": 0,
+  "num_skipped": 634,
+  "num_deleted": 1,
+  "seconds": 0.34
+ },
+ "same_version_again": {
+  "num_added": 0,
+  "num_updated": 0,
+  "num_skipped": 635,
+  "num_deleted": 0,
+  "seconds": 0.09
+ },
+ "share_embedded_again": 0.0016,
+ "rank_of_the_line_before": 3,
+ "rank_of_the_line_after": 4,
+ "old_amount_still_found_by_search": false,
+ "chunks_still_holding_old_amount": 0,
+ "page_store_has_new_amount": true
+}
