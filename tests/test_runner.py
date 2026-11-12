@@ -41,6 +41,15 @@ def test_reference_answers_score_100_and_every_row_is_complete(questions, tmp_pa
     assert set(summary["by_split"]) == {"dev", "test"}
 
 
+def test_cost_is_counted_from_the_tokens_so_a_corrected_price_reaches_the_table(questions, tmp_path):
+    run = load_run(run_and_grade(Oracle(), questions, scripted_llm(questions, "right"), tmp_path))
+    total = summarize(run)["answer_cost_total_usd"]
+    assert total == pytest.approx(sum(row["cost_usd"] for row in run.answers))  # the price table has not changed, so both agree
+    for row in run.answers:  # dollars written on a day when the price table was wrong
+        row["cost_usd"] /= 2
+    assert summarize(run)["answer_cost_total_usd"] == pytest.approx(total)
+
+
 @pytest.mark.parametrize("style,label", [("wrong", "incorrect"), ("refuse", "refused"), ("empty", "incorrect")])
 def test_null_answers_score_zero(questions, tmp_path, style, label):
     llm = scripted_llm(questions, style)

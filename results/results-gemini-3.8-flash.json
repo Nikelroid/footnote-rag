@@ -68,8 +68,8 @@
      "n_cases": 49
     }
    },
-   "answer_cost_per_question_usd": 0.007230396666666667,
-   "answer_cost_total_usd": 3.2536785000000004,
+   "answer_cost_per_question_usd": 0.014460793333333334,
+   "answer_cost_total_usd": 6.507357000000001,
    "judge_cost_per_answer_usd": 0.0030884141414141415,
    "judge_cost_total_usd": 1.223012,
    "latency_median_s": 11.8915,
@@ -168,8 +168,8 @@
      "n_cases": 50
     }
    },
-   "answer_cost_per_question_usd": 0.014492028833333335,
-   "answer_cost_total_usd": 6.5214129750000005,
+   "answer_cost_per_question_usd": 0.02898405766666667,
+   "answer_cost_total_usd": 13.042825950000001,
    "judge_cost_per_answer_usd": 0.003156984269662921,
    "judge_cost_total_usd": 1.404858,
    "latency_median_s": 9.462499999999999,
@@ -273,8 +273,8 @@
      "n_cases": 49
     }
    },
-   "answer_cost_per_question_usd": 0.00354761,
-   "answer_cost_total_usd": 1.5964245000000001,
+   "answer_cost_per_question_usd": 0.00709522,
+   "answer_cost_total_usd": 3.1928490000000003,
    "judge_cost_per_answer_usd": 0.0029184708520179374,
    "judge_cost_total_usd": 1.301638,
    "latency_median_s": 4.1845,

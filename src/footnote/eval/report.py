@@ -14,10 +14,21 @@ from pathlib import Path
 
 import numpy as np
 
+from ..pricing import Usage, cost_usd
 from .metrics import cluster_bootstrap, cohen_kappa, confusion, flip_rate, paired_difference, wilson_interval
 from .runner import UNGRADED, _read_jsonl, grades_path
 
 OUTCOMES = ("correct", "incorrect", "refused")
+
+
+def answer_cost(row: dict) -> float:
+    """What an answer costs at the prices in `pricing.py`, counted again from the tokens of its calls.
+
+    The token counts are what the API reported. The dollars stored next to them are
+    right only if the price table was right on the day of the run, and for Gemini it
+    was not. Counting from the tokens lets a corrected price reach every table.
+    """
+    return sum(cost_usd(call["model"], Usage(**call["usage"])) for call in row["calls"])
 
 
 class IncompleteRun(ValueError):
@@ -130,7 +141,7 @@ def summarize(run: RunData, allow_partial: bool = False) -> dict:
         kind: cluster_bootstrap(outcome_values(run, "correct", [r for r in run.answers if r["tags"][0] == kind]))
         for kind in sorted({r["tags"][0] for r in run.answers})
     }
-    costs = np.array([r["cost_usd"] for r in run.answers])
+    costs = np.array([answer_cost(r) for r in run.answers])
     latency = np.array([r["latency_s"] for r in run.answers])
     judge_costs = [g["judge"]["cost_usd"] for g in run.grades.values() if "judge" in g]
     out["answer_cost_per_question_usd"] = float(costs.mean())

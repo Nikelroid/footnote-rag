@@ -160,7 +160,7 @@ The search, the prompts and the judge stay the same, and only the answering mode
 
 The three agents are within three points of each other, and their intervals overlap almost entirely. The model that costs 18 times more per question than the cheapest one is 0.9 points ahead of it. What the other two models add is memory. Without documents Sonnet answers 57.8% of the questions correctly and Gemini 62.0%, against 33.6% for Haiku.
 
-Gemini's cost is shown at Google's standard price of $1.50 and $7.50 per million input and output tokens. Google's price page lists an introductory price of half that until the end of 2026, and the result files in `results/` were written with it. The Cloud console showed the standard price for the same tokens, so the higher figure is used here.
+Gemini's cost is at Google's standard price of $1.50 and $7.50 per million input and output tokens, which is what Google charged. Its price page also lists an introductory price of half that until the end of 2026, and the first version of this table used it by mistake. The report prices every answer from its stored token counts, so the corrected price reached the table without a new run.
 
 Some answers were cut off at the output limit, because the model used it up while reasoning. They are counted and left out of the averages. For Gemini that is 54 of 450 without documents, 5 of 450 with the agent and 4 of 450 with the evidence page. For Sonnet it is 3 of 150 without documents and 1 of 150 with the evidence page. Gemini's 62.0% without documents is therefore on the answers it finished. If every cut-off answer is counted as not correct, 59.1% of its 450 answers are correct.
 

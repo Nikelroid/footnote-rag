@@ -95,7 +95,7 @@ python -m footnote.app.adk_agent --gemini "What is the FY2018 capital expenditur
 
 Everything on Gemini uses `gemini-3.8-flash` on Google Cloud's global endpoint. Google's price page, read on 2026-11-10, lists an introductory price of $0.75 per million input tokens and $3.75 per million output tokens through December 31, 2026, and a standard price of $1.50 and $7.50 after that.
 
-The ledger first counted at the introductory price, and that was a mistake. On the same day the Cloud console's live cost showed the standard price for the same tokens. Priced at the standard rate, the ledger's token counts give the console's figure to the cent, $38.83 where the ledger had said $19.41. Google's billing pages say live costs are gross estimates that leave out savings and credits, so the final bill may still be the lower figure. Until a final bill says so, the code counts at the standard price.
+The ledger first counted at the introductory price, and that was a mistake. On the same day the Cloud console's live cost showed the standard price for the same tokens. Priced at the standard rate, the ledger's token counts give the console's figure to the cent, $38.83 where the ledger had said $19.41. Google then charged the standard price. The code counts at that price now, and the report prices every answer again from its stored token counts, so the correction reached the tables without a new run.
 
 The lesson for any new provider is to send a few calls first and compare the ledger with the provider's own cost page before sending thousands.
 

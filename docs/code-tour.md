@@ -14,7 +14,7 @@ This page is a reading guide. It says where each part of the project lives and i
 | `src/footnote/app/` | The API, the demo page, the MCP server and the ADK agent |
 | `src/footnote/llm.py`, `ledger.py`, `pricing.py` | The one function every model call goes through, and the spend ledger behind it |
 | `src/footnote/cli.py` | The `footnote` command. `footnote --help` lists what it can do |
-| `tests/` | 260 tests. None of them calls a model, and 9 need the downloaded benchmark files and skip without them |
+| `tests/` | 261 tests. None of them calls a model, and 9 need the downloaded benchmark files and skip without them |
 | `results/` | Every table and chart quoted in the README, as Markdown, JSON and SVG |
 | `manifests/` | The pinned commit of the benchmark, with the size and hash of each file |
 
@@ -60,5 +60,5 @@ footnote retrieval-check      # what each search step adds
 footnote updates-demo         # amend one filing and watch the index follow
 footnote scorecard            # the table of pages that mislead, from the saved results
 footnote stats-check          # the statistics, checked on simulated benchmarks
-pytest                        # 260 tests
+pytest                        # 261 tests
 ```

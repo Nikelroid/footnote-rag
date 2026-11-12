@@ -51,8 +51,9 @@ BUDGET_LINES: dict[str, float] = {
 # Claude budget, so it has its own ledger file and its own cap. The credit is a fixed
 # amount and nothing may be charged beyond it, so the cap stays under the credit.
 # On 2026-11-10 the ledger was found to have counted Gemini at half the price the
-# Cloud console showed. Recounted at the console's price, the runs behind results/
-# cost $38.83, which is over this cap. Raising it means editing this line.
+# Cloud console showed, and the console's price is what Google charged. Recounted
+# at that price, the runs behind results/ cost $38.83, which is over this cap, so the
+# ledger refuses every further Gemini call. Raising it means editing this line.
 GOOGLE_MODEL = "gemini-3.8-flash"
 GOOGLE_CAP_USD = 35.00
 GOOGLE_BUDGET_LINES: dict[str, float] = {

@@ -57,8 +57,7 @@ PRICING: dict[str, ModelPricing] = {
     # Google's price page lists an introductory price of half these rates through
     # 2026-12-31, and this table used it at first. On 2026-11-10 the Cloud console's
     # live cost showed the standard rates for the same tokens, twice what the ledger
-    # had counted. Until a final bill says otherwise the standard rates are used, so
-    # that the ledger can overstate the bill and never understate it.
+    # had counted, and the standard rates are what Google charged.
     # Google caches repeated input by itself and charges nothing for writing to that
     # cache, so a cache write is priced as plain input. Thinking is billed as output.
     "gemini-3.8-flash": ModelPricing(

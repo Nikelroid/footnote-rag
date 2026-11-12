@@ -4,7 +4,7 @@
 
 **A small assistant that answers questions about SEC filings and names the page behind every answer. It is then tested on the ways a real document set misbehaves, with pages that change, pages from the wrong filing, and pages that carry instructions.**
 
-Everything runs on a laptop, and the models are called through an API. All the experiments on this page together cost 55 US dollars of Claude API calls, plus 19 to 39 US dollars of Gemini calls, depending on which of Google's two listed prices is applied.
+Everything runs on a laptop, and the models are called through an API. All the experiments on this page together cost 55 US dollars of Claude API calls and 39 US dollars of Gemini calls.
 
 | The question | The measured answer |
 |---|---|
@@ -135,7 +135,7 @@ Share of answers that give the misleading amount, on 83 statement lines for the 
 | Gemini 3.8 Flash | 62.0% | 84.2% | 92.3% | $0.02898 |
 | Claude Sonnet 5.5 | 57.8% | 86.7% | 94.0% | $0.04512 |
 
-No. The other two models know far more by heart. With the same search all three end within three points of each other, and the cheapest one costs 18 times less than the dearest. On this task the money is better spent on search than on the model. Gemini's cost is shown at Google's standard price. Its introductory price, listed until the end of 2026, is half of that.
+No. The other two models know far more by heart. With the same search all three end within three points of each other, and the cheapest one costs 18 times less than the dearest. On this task the money is better spent on search than on the model.
 
 The page tests tell the same story, as the chart at the top shows. No model could tell which version of a page was current without being told, and the same one sentence fixed all three. Sonnet was the most careful. When nothing told the two versions apart it declined to choose in 49% to 83% of its answers. It was also the one that always trusted a wrong label.
 
@@ -177,7 +177,7 @@ footnote data fetch --pdfs needed   # benchmark files and 84 filings, 170 MB, ch
 footnote ingest                     # about 6 minutes, downloads two small open models on first use
 footnote retrieval-check            # the retrieval scores, no model call
 footnote updates-demo               # amend a filing and watch the index follow
-pytest                              # 260 tests, no API call
+pytest                              # 261 tests, no API call
 ```
 
 Answering needs an API key in `.env`. [docs/keys.md](docs/keys.md) has the steps and the limits to set. A paid command prints its plan and sends nothing until `--confirm` is added.
